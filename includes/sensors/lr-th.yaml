@@ -1,0 +1,11 @@
+- platform: mqtt
+  state_topic: "hass/enviro/5c:cf:7f:c0:5e:f"
+  unit_of_measurement: "°F"
+  name: "Livingroom Temperature"
+  value_template: '{{  value_json.temperature  }}'
+
+- platform: mqtt
+  state_topic: "hass/enviro/5c:cf:7f:c0:5e:f"
+  unit_of_measurement: "%"
+  name: "Livingroom Humidity"
+  value_template: '{{  value_json.humidity  }}'

@@ -1,0 +1,15 @@
+broker: 10.13.13.85
+port: 1883
+client_id: hass
+username: ha-master
+password: !secret mqtt_pass
+birth_message:
+  topic: 'hass/status'
+  payload: 'online'
+  qos: 1
+  retain: true
+will_message:
+  topic: 'hass/status'
+  payload: 'offline'
+  qos: 1
+  retain: true

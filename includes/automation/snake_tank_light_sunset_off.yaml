@@ -1,0 +1,7 @@
+- alias: 'Turn off the snake tank light at sunset'
+  trigger:
+    platform: sun
+    event: sunset
+  action:
+    service: switch.turn_off
+    entity_id: switch.snake_tank_light_switch_5_0

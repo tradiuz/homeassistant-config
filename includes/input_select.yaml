@@ -1,0 +1,17 @@
+alarm_status:
+  name: "Alarm Status"
+  options:
+    - 'Armed Home'
+    - 'Armed Away'
+    - 'Disarmed'
+    - 'Unknown'
+  initial: 'Unknown'
+  icon: 'mdi:home'
+home_status:
+  name: "Home Status"
+  options:
+   - 'Occupied'
+   - 'Empty'
+   - 'Unknown'
+  initial: 'Unknown'
+  icon: 'mdi:home'

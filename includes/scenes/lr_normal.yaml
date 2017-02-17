@@ -1,0 +1,7 @@
+name: lr_normal
+entities:
+  light.living_room_light_level_11:
+    state: on
+    brightness: 255
+  light.rgbw_level_3:
+    state: off

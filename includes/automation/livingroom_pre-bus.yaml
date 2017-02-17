@@ -1,0 +1,17 @@
+- alias: 'Turn on the living room light to make leaving for the bus easier'
+  trigger:
+    platform: time
+    after: "5:30"
+  condition: 
+  - condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    service: light.turn_on
+    entity_id: light.living_room_light_level_11_0
+    data:
+      brightness: 64
