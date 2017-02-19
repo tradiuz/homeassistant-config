@@ -4,4 +4,4 @@ python:
 install:
   - pip3 install homeassistant
 script:
-  - hass --script check_config
+  - hass -c tradiuz/homeassistant-config --script check_config
