@@ -1,7 +1,0 @@
-- alias: 'Turn on bathroom fan when humidity is high'
-  trigger:
-    platform: numeric_state
-    entity_id: sensor.master_bathroom_humidity
-    above: 75
-  action:
-    service: script.master_bathroom_fan

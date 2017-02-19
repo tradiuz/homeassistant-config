@@ -85,9 +85,9 @@ device_tracker:
 
 zone: !include_dir_merge_list includes/zones
 
-#media_player hovelcast:
-#  platform: cast
-#  host: 10.13.13.104
+media_player hovelcast:
+  platform: cast
+  host: 10.13.13.118
 
 
 

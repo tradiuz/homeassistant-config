@@ -1,0 +1,10 @@
+- alias: 'Turn on bathroom fan when humidity is high'
+  trigger:
+    platform: state
+    entity_id: switch.living_room_lamp_switch_8_0
+    state: 'on'
+    for:
+      minutes: 10
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.living_room_lamp_switch_8_0
