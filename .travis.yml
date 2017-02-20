@@ -1,9 +1,9 @@
 language: python
 python:
-  - "3.4"
+  - '3.4'
+before_install:
+  - openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv -in secrets.yaml.enc -out secrets.yaml -d
 install:
   - pip3 install homeassistant
-before_script:
-  - cp travis_secrets.yaml secrets.yaml
 script:
   - hass -c . --script check_config
