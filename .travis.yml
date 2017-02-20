@@ -3,5 +3,7 @@ python:
   - "3.4"
 install:
   - pip3 install homeassistant
+before_script:
+  - bash travis_secrets.yaml 
 script:
   - hass -c . --script check_config
