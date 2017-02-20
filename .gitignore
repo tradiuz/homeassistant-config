@@ -1,6 +1,6 @@
 
 #ignore zones
-includes/zones/
+includes/zones/*.yaml
 
 
 

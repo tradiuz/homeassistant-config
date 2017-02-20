@@ -35,14 +35,10 @@ scene: !include_dir_list  includes/scenes
 
 mqtt: !include includes/mqtt.yaml
         
-# Discover some devices automatically
-#discovery:
 
 # Enables the frontend
 frontend:
 
-# Show links to resources in log and frontend
-#introduction:
 
 # Enables support for tracking state changes over time.
 history:
@@ -57,8 +53,6 @@ group: !include includes/groups.yaml
 zwave:
   usb_path: /dev/zwave
   #polling_interval: 60000
-  #This will change if updated!
-  #config_path:  /usr/local/lib/python3.5/dist-packages/libopenzwave-0.3.1-py3.5-linux-x86_64.egg/config/
 
 switch: !include_dir_list includes/switches
 light: !include_dir_list includes/lightss
@@ -70,13 +64,6 @@ emulated_hue:
     - switch
     - imput_boolean
 
-
-#mqtt:
-#  broker: 'm10.cloudmqtt.com'
-#  port: 28890
-#  username: 'homie'
-#  password: '7133382739ha'
-
 device_tracker:
   platform: owntracks
   max_gps_accuracy: 200
@@ -85,9 +72,8 @@ device_tracker:
 
 zone: !include_dir_merge_list includes/zones
 
-media_player hovelcast:
-  platform: cast
-  host: 10.13.13.118
+media_player: !include_dir_merge_named includes/media_players
+  
 
 
 

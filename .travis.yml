@@ -1,9 +1,18 @@
 language: python
 python:
-  - '3.4'
+- '3.4'
 before_install:
-  - openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv -in secrets.yaml.enc -out secrets.yaml -d
+- openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv
+  -in zone-work.yaml.enc -out includes/zones/zone-work.yaml -d
+- openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv
+  -in zone-home.yaml.enc -out includes/zones/zone-home.yaml -d
+- openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv
+  -in zone-friends.yaml.enc -out includes/zones/zone-friends.yaml -d
+- openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv
+  -in zone-cities.yaml.enc -out includes/zones/zone-cities.yaml -d
+- openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv
+  -in secrets.yaml.enc -out secrets.yaml -d
 install:
-  - pip3 install homeassistant
+- pip3 install homeassistant
 script:
-  - hass -c . --script check_config
+- hass -c . --script check_config
