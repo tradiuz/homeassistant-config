@@ -1,16 +1,12 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: Home
-  # C for Celcius, F for Fahrenheit
-#  temperature_unit: F
   unit_system: imperial
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: CST6CDT
-  #used for doing sunrise/sunset calculation
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   elevation: !secret home_elevation
   customize: !include includes/customized.yaml
+
 # Track the sun
 sun:
 
