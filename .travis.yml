@@ -1,36 +1,26 @@
 language: python
-env:
+env: INSTALL_ARGS='homeassistant'
 python:
-  - '3.4'
-  - '3.5'
-  - '3.6'
-  - 'nightly'
+  - "3.4"
 matrix:
   fast_finish: true
   include:
     - python: "3.4"
-      env: HA_VERSION='==0.38.3'
-    - python: "3.5"
-      env: HA_VERSION='==0.38.3'
-    - python: "3.6"
-      env: HA_VERSION='==0.38.3'
-#    - python: "3.4"
-#    - python: "3.5"
-#    - python: "3.6"
+      env: INSTALL_ARGS='homeassistant==0.38.3'
+    - python: "3.4"
+      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
   allow_failures:
-  - python: "3.4"
-    env:
-  - python: "3.5"
-    env:
-  - python: "3.6"
-    env:
-  - python: 'nightly'
-    env:
-
+    - python: "3.4"
+      env: INSTALL_ARGS='homeassistant'
+    - python: "3.4"
+      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
+cache:
+  directories:
+    - $HOME/.cache/pip
 before_install:
-- openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv
-  -in secrets.yaml.enc -out secrets.yaml -d
+  - openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv -in secrets.yaml.enc -out secrets.yaml -d
 install:
-- pip3 install homeassistant$HA_VERSION
+  - pip3 install $INSTALL_ARGS
+  - hass --version
 script:
-- hass -c . --script check_config
+  - hass -c . --script check_config
