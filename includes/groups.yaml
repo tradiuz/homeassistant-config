@@ -10,6 +10,7 @@ people:
   entities:
     - device_tracker.pforristal_ptfs7
     - device_tracker.tforristal_trfs6
+    - device_tracker.bforristal_bcfgp
 
 weather:
   name: Weather

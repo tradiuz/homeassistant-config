@@ -13,9 +13,9 @@
   longitude: -96.796988
   radius: 30000
   icon: 'mdi:emoticon-poop'
-- name: 'Houston'
-  latitude: 29.760427
-  longitude: -95.369803
-  radius: 30000
-  icon: 'mdi:city'
+#- name: 'Houston'
+#  latitude: 29.760427
+#  longitude: -95.369803
+#  radius: 30000
+#  icon: 'mdi:city'
 
