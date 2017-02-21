@@ -7,13 +7,13 @@ matrix:
   include:
     - python: "3.4"
       env: INSTALL_ARGS='homeassistant==0.38.3'
-    - python: "3.4"
-      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
+#    - python: "3.4"
+#      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git@dev#egg=homeassistant'
   allow_failures:
     - python: "3.4"
       env: INSTALL_ARGS='homeassistant'
-    - python: "3.4"
-      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
+#    - python: "3.4"
+#      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git@dev#egg=homeassistant'
 cache:
   directories:
     - $HOME/.cache/pip
