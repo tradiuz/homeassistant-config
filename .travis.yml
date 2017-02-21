@@ -8,8 +8,8 @@ matrix:
     - env: INSTALL_ARGS='homeassistant==0.38.3'
     - env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
   allow_failures:
-  - env: INSTALL_ARGS='homeassistant'
-  - env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
+    - env: INSTALL_ARGS='homeassistant'
+    - env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git#egg=Package'
 cache:
   directories:
     - $HOME/.cache/pip
