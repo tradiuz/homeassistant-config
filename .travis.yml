@@ -21,5 +21,6 @@ before_install:
   - openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv -in secrets.yaml.enc -out secrets.yaml -d
 install:
   - pip3 install $INSTALL_ARGS
+  - hass --version
 script:
   - hass -c . --script check_config
