@@ -6,19 +6,19 @@ matrix:
   fast_finish: true
   include:
     - python: "3.4"
-      env: INSTALL_ARGS='homeassistant==0.38.3'
-#    - python: "3.4"
-#      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git@dev#egg=homeassistant'
+      env: INSTALL_ARGS='homeassistant==0.38.4'
+    - python: "3.4"
+      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git@dev#egg=homeassistant'
   allow_failures:
     - python: "3.4"
       env: INSTALL_ARGS='homeassistant'
-#    - python: "3.4"
-#      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git@dev#egg=homeassistant'
+    - python: "3.4"
+      env: INSTALL_ARGS='-e git+https://github.com/home-assistant/home-assistant.git@dev#egg=homeassistant'
 cache:
   directories:
     - $HOME/.cache/pip
 before_install:
-  - openssl aes-256-cbc -K $encrypted_d180a8fc4422_key -iv $encrypted_d180a8fc4422_iv -in secrets.yaml.enc -out secrets.yaml -d
+  - mv travis_secrets.yaml secrets.yaml
 install:
   - pip3 install $INSTALL_ARGS
   - hass --version

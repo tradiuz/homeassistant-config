@@ -59,7 +59,6 @@ __pycache__
 *.backup
 *.google.token
 .google.token
-.HA_VERSION
 home-assistant.env
 home-assistant.*
 known_devices.yaml
