@@ -1,176 +1,199 @@
-  - entity_id: switch.kitchen_sink_light_switch_2_0
-    friendly_name: 'Kitchen Sink Light'
-    icon: 'mdi:lightbulb'
-  - entity_id: light.rgbw_level_3_0
-    friendly_name: 'Ambient Light - Master'
-  - entity_id: light.rgbw_level_3_0_2
-    friendly_name: 'Ambient Light - Dimmer'
-  - entity_id: light.rgbw_level_3_0_3
-    friendly_name: 'Ambient Light - R'
-  - entity_id: light.rgbw_level_3_0_4
-    friendly_name: 'Ambient Light - G'
-  - entity_id: light.rgbw_level_3_0_5
-    friendly_name: 'Ambient Light - B'
-  - entity_id: light.rgbw_level_3_0_6
-    friendly_name: 'Ambient Light - W'
-  - entity_id: sensor.rgbw_power_3_0
-    friendly_name: 'Ambient Light - Watts'
-    hidden: true
-    polling_intensity: 1
-
-  - entity_id: sensor.rgbw_energy_3
-    hidden: true
 
 
-  - entity_id: light.bedroom_light_level_4_0
-    friendly_name: 'Bedroom Light'
-    icon: 'mdi:lightbulb-outline'
+switch.kitchen_sink_light_switch_2_0:
+  friendly_name: 'Kitchen Sink Light'
+  icon: 'mdi:lightbulb'
+  haaska_name: 'Kitchen Sink Light'
 
-  - entity_id: light.living_room_light_level_11_0
-    friendly_name: 'Living Room Light'
-    icon: 'mdi:lightbulb-outline'
+light.rgbw_level_3:
+  friendly_name: 'Ambient Light - Master'
+light.rgbw_level_3_2:
+  friendly_name: 'Ambient Light - Dimmer'
+light.rgbw_level_3_3:
+  friendly_name: 'Ambient Light - R'
+light.rgbw_level_3_4:
+  friendly_name: 'Ambient Light - G'
+light.rgbw_level_3_5:
+  friendly_name: 'Ambient Light - B'
+light.rgbw_level_3_6:
+  friendly_name: 'Ambient Light - W'
+sensor.rgbw_power_3:
+  friendly_name: 'Ambient Light - Watts'
+  hidden: true
+  polling_intensity: 1
 
+sensor.rgbw_energy_3:
+  hidden: true
+  
+  
+light.bedroom_light_level_4_0:
+  friendly_name: 'Bedroom Light'
+  icon: 'mdi:lightbulb-outline'
 
-  - entity_id: switch.snake_tank_light_switch_5_0
-    friendly_name: 'Snake Tank Light'
-    icon: 'mdi:spotlight'
-  - entity_id: sensor.snake_tank_light_power_5_8
-    hidden: true
-    friendly_name: 'Snake Tank Light - Watts'
-    polling_intensity: 1
-  - entity_id: sensor.snake_tank_light_energy_5_0,sensor.snake_tank_light_previous_reading_5_1,sensor.snake_tank_light_previous_reading_5_9
-    hidden: true
-
-
-  - entity_id: switch.night_stand_light_switch_6_0
-    friendly_name: 'Night Stand Light'
-    icon: 'mdi:lightbulb'
-  - entity_id: sensor.night_stand_light_power_6
-    hidden: true
-    friendly_name: 'Night Stand Light - Watts'
-    polling_intensity: 1
-  - entity_id: sensor.night_stand_light_energy_6
-    hidden: true
-  - entity_id: sensor.night_stand_light_previous_reading_6
-    hidden: true
-
-
-  - entity_id: switch.living_room_lamp_switch_8_0
-    friendly_name: 'Living Room Lamp'
-    icon: 'mdi:lightbulb'
-  - entity_id: sensor.living_room_lamp_power_8
-    hidden: true
-    friendly_name: 'Living Room Lamp - Watts'
-    polling_intensity: 1
-
-  - entity_id: sensor.living_room_lamp_energy_8
-    hidden: true
-  - entity_id: sensor.living_room_lamp_previous_reading_8
-    hidden: true
-
-  - entity_id: switch.kitchen_stove_light_switch_9_0
-    friendly_name: 'Kitchen Stove Light'
-    icon: 'mdi:lightbulb'
-  - entity_id: sensor.kitchen_stove_light_power_9
-    hidden: true
-    friendly_name: 'Kitchen Stove Light - Watts'
-    polling_intensity: 1
-  - entity_id: sensor.kitchen_stove_light_energy_9
-    hidden: true
-  - entity_id: sensor.kitchen_stove_light_previous_reading_9
-    hidden: true
+light.living_room_light_level_11_0:
+  friendly_name: 'Living Room Light'
+  icon: 'mdi:lightbulb-outline'
 
 
-  - entity_id: sensor.leak_detector_alarm_level_10,sensor.leak_detector_alarm_type_10,sensor.leak_detector_general_10,sensor.leak_detector_flood_10
-    hidden: true
-  - entity_id: sensor.leak_detector_temperature_10
-    hidden: true
-    friendly_name: 'Under Sink Temperature'
-    polling_intensity: 1
+switch.snake_tank_light_switch_5_0:
+  friendly_name: 'Snake Tank Light'
+  icon: 'mdi:spotlight'
+sensor.snake_tank_light_power_5_8:
+  hidden: true
+  friendly_name: 'Snake Tank Light - Watts'
+  polling_intensity: 1
+sensor.snake_tank_light_energy_5_0:
+  hidden: true
+sensor.snake_tank_light_previous_reading_5_1:
+  hidden: true
+sensor.snake_tank_light_previous_reading_5_9:
+  hidden: true
+sensor.snake_tank_light_exporting_5_32:
+  hidden: true
+
+  
+switch.night_stand_light_switch_6_0:
+  friendly_name: 'Night Stand Light'
+  icon: 'mdi:lightbulb'
+sensor.night_stand_light_power_6:
+  hidden: true
+  friendly_name: 'Night Stand Light - Watts'
+  polling_intensity: 1
+sensor.night_stand_light_energy_6:
+  hidden: true
+sensor.night_stand_light_previous_reading_6:
+  hidden: true
 
 
+switch.living_room_lamp_switch_8_0:
+  friendly_name: 'Living Room Lamp'
+  icon: 'mdi:lightbulb'
+sensor.living_room_lamp_power_8:
+  hidden: true
+  friendly_name: 'Living Room Lamp - Watts'
+  polling_intensity: 1
 
-  - entity_id: sensor.dark_sky_apparent_temperature
-    hidden: true
-    friendly_name: 'Feels Like'
+sensor.living_room_lamp_energy_8:
+  hidden: true
+sensor.living_room_lamp_previous_reading_8:
+  hidden: true
 
-  - entity_id: sensor.dark_sky_cloud_coverage
-    hidden: true
-
-  - entity_id: sensor.dark_sky_dew_point
-    hidden: true
-    friendly_name: 'Dewpoint'
-
-  - entity_id: sensor.dark_sky_humidity
-    friendly_name: 'Humidity'
-    icon: 'mdi:water-percent'
-  - entity_id: sensor.dark_sky_icon,sensor.dark_sky_nearest_storm_bearing
-    hidden: true
-
-
-  - entity_id: sensor.dark_sky_nearest_storm_distance
-    hidden: true
-    friendly_name: 'Nearest Storm'
-    icon: 'mdi:weather-pouring'
-  - entity_id: sensor.dark_sky_ozone
-    hidden: true
-    friendly_name: 'Ozone'
-
-  - entity_id: sensor.dark_sky_precip
-    hidden: true
-    friendly_name: "Rainfall"
-
-  - entity_id: sensor.dark_sky_precip_intensity
-    hidden: true
-
-  - entity_id: sensor.dark_sky_precip_probability
-    friendly_name: 'Risk of Rain'
-    icon: 'mdi:weather-rainy'
-
-  - entity_id: sensor.dark_sky_pressure
-    hidden: true
-    friendly_name: 'Pressure'
-    icon: 'mdi:gauge'
-  - entity_id: sensor.dark_sky_summary
-    friendly_name: 'Weather Summary'
-    icon: 'mdi:newspaper'
-  - entity_id: sensor.dark_sky_temperature
-    friendly_name: 'Temperature'
-    icon: 'mdi:thermometer'
-  - entity_id: sensor.dark_sky_visibility
-    hidden: true
-    friendly_name: 'Visibility'
-
-  - entity_id: sensor.dark_sky_wind_bearing
-    hidden: true
-    friendly_name: 'Wind Direction'
-  - entity_id: sensor.dark_sky_wind_speed
-    hidden: true
-    friendly_name: 'Wind Speed'
+switch.kitchen_stove_light_switch_9_0:
+  friendly_name: 'Kitchen Stove Light'
+  icon: 'mdi:lightbulb'
+sensor.kitchen_stove_light_power_9:
+  hidden: true
+  friendly_name: 'Kitchen Stove Light - Watts'
+  polling_intensity: 1
+sensor.kitchen_stove_light_energy_9:
+  hidden: true
+sensor.kitchen_stove_light_previous_reading_9:
+  hidden: true
 
 
-  - entity_id: device_tracker.echolr
-    friendly_name: "Living Room Echo"
-    hidden: true
+sensor.leak_detector_alarm_level_10:
+  hidden: true
+sensor.leak_detector_alarm_type_10:
+  hidden: true
+sensor.leak_detector_temperature_10:
+  hidden: true
+  friendly_name: 'Under Sink Temperature'
+  polling_intensity: 1
+sensor.leak_detector_general_10:
+  hidden: true
+sensor.leak_detector_flood_10:
+  hidden: true
 
-  - entity_id: device_tracker.echobr
-    friendly_name: "Bedroom Echo"
-    hidden: true
 
-  - entity_id: sensor.bedroom_smoke_detector_alarm_level_7,sensor.bedroom_smoke_detector_alarm_type_7
-    hidden: true
+sensor.dark_sky_apparent_temperature:
+  hidden: true
+  friendly_name: 'Feels Like'
+
+sensor.dark_sky_cloud_coverage:
+  hidden: true
+
+sensor.dark_sky_dew_point:
+  hidden: true
+  friendly_name: 'Dewpoint'
+  
+sensor.dark_sky_humidity:
+# hidden: true
+  friendly_name: 'Humidity'
+  icon: 'mdi:gauge'
+sensor.dark_sky_icon:
+  hidden: true
+
+sensor.dark_sky_nearest_storm_bearing:
+  hidden: true
+
+sensor.dark_sky_nearest_storm_distance:
+  hidden: true
+  friendly_name: 'Nearest Storm'
+  icon: 'mdi:weather-pouring'
+sensor.dark_sky_ozone:
+  hidden: true
+  friendly_name: 'Ozone'
+
+sensor.dark_sky_precip:
+  hidden: true
+  friendly_name: "Rainfall"
+
+sensor.dark_sky_precip_intensity:
+  hidden: true
+
+sensor.dark_sky_precip_probability:
+#  hidden: true
+  friendly_name: 'Risk of Rain'
+  icon: 'mdi:weather-rainy'
+
+sensor.dark_sky_pressure:
+  hidden: true
+  friendly_name: 'Pressure'
+  icon: 'mdi:gauge'
+sensor.dark_sky_summary:
+#  hidden: true
+  friendly_name: 'Weather Summary'
+  icon: 'mdi:newspaper'
+sensor.dark_sky_temperature:
+#  hidden: true
+  friendly_name: 'Temperature'
+  icon: 'mdi:thermometer'
+sensor.dark_sky_visibility:
+  hidden: true
+  friendly_name: 'Visibility'
+
+sensor.dark_sky_wind_bearing:
+  hidden: true
+  friendly_name: 'Wind Direction'
+sensor.dark_sky_wind_speed:
+  hidden: true
+  friendly_name: 'Wind Speed'
 
 
-  - entity_id: sensor.kitchen_temperature,sensor.living_room_temperature,sensor.master_bed_room_temperature
-    icon: 'mdi:thermometer'
+device_tracker.echolr:
+  friendly_name: "Living Room Echo"
+  hidden: true
 
-  - entity_id: sensor.kitchen_humidity,sensor.livingroom_humidity,sensor.master_bedroom_humidity
-    icon: 'mdi:water-percent'
+device_tracker.echobr:
+  friendly_name: "Bedroom Echo"
+  hidden: true
 
-  - entity_id: sensor.bedroom_smoke_detector_alarm_type_7_0,sensor.bedroom_smoke_detector_alarm_level_7_1
-    hidden: true
-  - entity_id: sensor.*exporting*,sensor.*power*,sensor.*previous_reading*,sensor.*interval*,sensor.*energy*
-    hidden: true
+sensor.bedroom_smoke_detector_alarm_level_7:
+  hidden: true
+sensor.bedroom_smoke_detector_alarm_type_7:
+  hidden: true
 
-  - entity_id: automation.*,scene.*
-    hidden: true
+
+sensor.kitchen_temperature:
+  icon: 'mdi:thermometer'
+sensor.living_room_temperature:
+  icon: 'mdi:thermometer'
+sensor.master_bed_room_temperature:
+  icon: 'mdi:thermometer'
+sensor.kitchen_humidity:
+  icon: 'mdi:water-percent'
+sensor.livingroom_humidity:
+  icon: 'mdi:water-percent'
+sensor.master_bedroom_humidity:
+  icon: 'mdi:water-percent'
+
