@@ -49,7 +49,7 @@ group: !include includes/groups.yaml
 
 zwave:
   usb_path: /dev/zwave
-  device_config: includes/zwave_device_config.yaml
+  device_config: !include includes/zwave_device_config.yaml
 
 switch: !include_dir_list includes/switches
 light: !include_dir_list includes/lightss
