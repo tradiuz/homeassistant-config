@@ -1,3 +1,0 @@
-device_config_domain:
-  light:
-    polling_intensity: 2
