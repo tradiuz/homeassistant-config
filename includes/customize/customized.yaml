@@ -1,0 +1,244 @@
+sensor.dark_sky_apparent_temperature:
+  friendly_name: 'Feels Like'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:thermometer
+
+
+sensor.dark_sky_cloud_coverage:
+  friendly_name: 'Dark Sky Cloud Coverage'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-partlycloudy
+
+
+sensor.dark_sky_dew_point:
+  friendly_name: 'Dewpoint'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:thermometer
+
+
+sensor.dark_sky_humidity:
+  friendly_name: 'Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:gauge
+
+
+sensor.dark_sky_icon:
+  friendly_name: 'Dark Sky Icon'
+  emulated_hue: False
+  hidden: True
+
+sensor.dark_sky_nearest_storm_bearing:
+  friendly_name: 'Dark Sky Nearest Storm Bearing'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-lightning
+
+sensor.dark_sky_nearest_storm_distance:
+  friendly_name: 'Nearest Storm'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-pouring
+
+
+sensor.dark_sky_ozone:
+  friendly_name: 'Ozone'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:eye
+
+
+sensor.dark_sky_precip:
+  friendly_name: 'Rainfall'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-pouring
+
+
+sensor.dark_sky_precip_intensity:
+  friendly_name: 'Dark Sky Precip Intensity'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-rainy
+
+
+sensor.dark_sky_precip_probability:
+  friendly_name: 'Risk Of Rain'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:weather-rainy
+
+
+sensor.dark_sky_pressure:
+  friendly_name: 'Pressure'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:gauge
+
+
+sensor.dark_sky_summary:
+  friendly_name: 'Weather Summary'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:newspaper
+
+
+sensor.dark_sky_temperature:
+  friendly_name: 'Temperature'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+
+sensor.dark_sky_visibility:
+  friendly_name: 'Visibility'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:eye
+
+
+sensor.dark_sky_wind_bearing:
+  friendly_name: 'Wind Direction'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:compass
+
+
+sensor.dark_sky_wind_speed:
+  friendly_name: 'Wind Speed'
+  emulated_hue: False
+  hidden: True
+  icon: mdi:weather-windy
+
+sensor.kitchen_humidity:
+  friendly_name: 'Kitchen Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+sensor.kitchen_temperature:
+  friendly_name: 'Kitchen Temperature'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+sensor.leak_detector_temperature_10_1:
+  friendly_name: 'Leak Detector Temperature'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+sensor.livingroom_humidity:
+  friendly_name: 'Livingroom Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+
+sensor.livingroom_temperature:
+  friendly_name: 'Livingroom Temperature'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+
+sensor.master_bathroom_humidity:
+  friendly_name: 'Master Bathroom Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+
+
+sensor.master_bathroom_temperature:
+  friendly_name: 'Master Bathroom Temperature'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+
+sensor.master_bedroom_humidity:
+  friendly_name: 'Master Bedroom Humidity'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:water-percent
+
+
+sensor.master_bedroom_temperature:
+  friendly_name: 'Master Bedroom Temperature'
+  emulated_hue: False
+  hidden: False
+  icon: mdi:thermometer
+
+
+
+light.rgbw_level_3_0:
+  friendly_name: 'Ambient Light - Master'
+  hidden: false
+  emulated_hue: true
+ 
+light.rgbw_level_3_0_2:
+  friendly_name: 'Ambient Light - Dimmer'
+  hidden: false
+  emulated_hue: true
+
+light.rgbw_level_3_0_3:
+  friendly_name: 'Ambient Light - R'
+  hidden: false
+  emulated_hue: true
+
+light.rgbw_level_3_0_4:
+  friendly_name: 'Ambient Light - G'
+  hidden: false
+  emulated_hue: true
+
+light.rgbw_level_3_0_5:
+  friendly_name: 'Ambient Light - B'
+  hidden: false
+  emulated_hue: true
+
+light.rgbw_level_3_0_6:
+  friendly_name: 'Ambient Light - W'
+  hidden: false
+  emulated_hue: true
+
+light.bedroom_light_level_4_0:
+  friendly_name: 'Bedroom Light'
+  icon: 'mdi:lightbulb-outline'
+  emulated_hue: true
+  hidden: false
+
+light.living_room_light_level_11_0:
+  friendly_name: 'Living Room Light'
+  icon: 'mdi:lightbulb-outline'
+  emulated_hue: true
+  hidden: false
+
+switch.kitchen_sink_light_switch_2_0:
+  friendly_name: 'Kitchen Sink Light'
+  icon: 'mdi:lightbulb'
+  hidden: false
+  emulated_hue: true
+ 
+switch.snake_tank_light_switch_5_0:
+  friendly_name: 'Snake Tank Light'
+  icon: 'mdi:spotlight'  
+  hidden: false
+  emulated_hue: true
+
+switch.night_stand_light_switch_6_0:
+  friendly_name: 'Night Stand Light'
+  icon: 'mdi:lightbulb'
+  hidden: false
+  emulated_hue: true
+
+switch.living_room_lamp_switch_8_0:
+  friendly_name: 'Living Room Lamp'
+  icon: 'mdi:lightbulb'
+  hidden: false
+  emulated_hue: true
+
+

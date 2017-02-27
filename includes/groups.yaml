@@ -20,6 +20,7 @@ weather:
     - sensor.dark_sky_temperature
     - sensor.dark_sky_humidity
     - sensor.dark_sky_precip_probability
+    - binary_sensor.iss
 master_bedroom:
   name: Master Bedroom
   entities:
@@ -36,6 +37,7 @@ master_bathroom:
 livingroom:
   name: Livingroom
   entities:
+    - sensor.back_door_access_control_12_9
     - sensor.livingroom_temperature
     - sensor.livingroom_humidity
     - light.living_room_light_level_11_0
@@ -44,7 +46,9 @@ livingroom:
 kitchen:
   name: Kitchen
   entities:
+    - sensor.front_door_access_control_13_9
     - sensor.kitchen_temperature
     - sensor.kitchen_humidity
     - switch.kitchen_sink_light_switch_2_0
     - switch.kitchen_stove_light_switch_9_0
+    - sensor.leak_detector_temperature_10_1

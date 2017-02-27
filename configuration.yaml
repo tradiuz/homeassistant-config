@@ -5,7 +5,8 @@ homeassistant:
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   elevation: !secret home_elevation
-  customize: !include includes/customized.yaml
+  customize: !include includes/customize/customized.yaml
+  customize_glob: !include includes/customize/customize_glob.yaml
 
 # Track the sun
 sun:

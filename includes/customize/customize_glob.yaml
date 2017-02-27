@@ -1,0 +1,36 @@
+sensor.*exporting*:
+  hidden: true
+
+sensor.*power*:
+  hidden: true
+
+sensor.*previous_reading*:
+  hidden: true
+
+sensor.*interval*:
+  hidden: true
+
+sensor.*energy*:
+  hidden: true
+
+sensor.*_door*:
+  hidden: true
+
+binary_sensor.*_door*:
+  hidden: true  
+
+sensor.leak*:
+  hidden: true
+
+binary_sensor.leak*:
+  hidden: true
+
+sensor.*alarm*:
+  hidden: true
+
+automation.*:
+  hidden: true
+
+scene.*:
+  hidden: true
+
