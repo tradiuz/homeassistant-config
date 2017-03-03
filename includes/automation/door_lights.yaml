@@ -1,0 +1,13 @@
+- alias: 'Turn on lights when opening doors'
+  trigger:
+    platform: state
+    entity_id: sensor.back_door_access_control_12_9, sensor.front_door_access_control_13_9
+    from: '23'
+    to: '22'
+  condition:
+    condition: state
+    entity_id: light.living_room_light_level_11_0
+    state: 'off'
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.living_room_light_level_11_0

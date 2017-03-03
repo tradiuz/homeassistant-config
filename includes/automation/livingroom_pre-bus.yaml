@@ -11,7 +11,5 @@
       - thu
       - fri
   action:
-    service: light.turn_on
-    entity_id: light.living_room_light_level_11_0
-    data:
-      brightness: 64
+    service: homeassistant.turn_on
+    entity_id: switch.living_room_lamp_switch_8_0 

@@ -17,7 +17,7 @@ sensor.*_door*:
   hidden: true
 
 binary_sensor.*_door*:
-  hidden: true  
+  hidden: true 
 
 sensor.leak*:
   hidden: true

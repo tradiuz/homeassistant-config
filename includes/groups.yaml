@@ -37,7 +37,7 @@ master_bathroom:
 livingroom:
   name: Livingroom
   entities:
-    - sensor.back_door_access_control_12_9
+    - sensor.ftdr
     - sensor.livingroom_temperature
     - sensor.livingroom_humidity
     - light.living_room_light_level_11_0
@@ -46,7 +46,7 @@ livingroom:
 kitchen:
   name: Kitchen
   entities:
-    - sensor.front_door_access_control_13_9
+    - sensor.bkdr
     - sensor.kitchen_temperature
     - sensor.kitchen_humidity
     - switch.kitchen_sink_light_switch_2_0
