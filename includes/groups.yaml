@@ -52,3 +52,9 @@ kitchen:
     - switch.kitchen_sink_light_switch_2_0
     - switch.kitchen_stove_light_switch_9_0
     - sensor.leak_detector_temperature_10_1
+
+outside:
+  name: Outside
+  entities:
+    - switch.back_porch_light_switch_14_0_3
+    - switch.back_porch_light_switch_14_0_2

@@ -1,7 +1,7 @@
-- alias: 'Turn on the living room light to make leaving for the bus easier'
+- alias: 'Turn off the living room light off after the bus leaves'
   trigger:
     platform: time
-    after: "5:45"
+    after: "6:30"
   condition: 
   - condition: time
     weekday:
@@ -11,5 +11,5 @@
       - thu
       - fri
   action:
-    service: homeassistant.turn_on
+    service: homeassistant.turn_off
     entity_id: switch.living_room_light_11_0 
