@@ -13,6 +13,14 @@ sun:
 
 config:
 
+recorder:
+  exclude:
+    entities:
+      - sensor.rgbw_exporting_3_32
+      - sensor.rgbw_power_3_8
+      - sensor.rgbw_power_3_4
+      - sensor.rgbw_energy_3_0
+
 http:
   api_password: !secret http_api
   
