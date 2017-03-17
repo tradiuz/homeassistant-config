@@ -8,5 +8,9 @@
     entity_id: switch.living_room_lamp_switch_8_0 
     state: 'off'
   action:
-    service: homeassistant.turn_on
+  - service: homeassistant.turn_on
+    entity_id: switch.living_room_lamp_switch_8_0
+  - wait_template: "{{ states.sensor.master_bedroom_humidity < 50 }}"
+    timeout: 00:15:00
+  - service: homeassistant.turn_off
     entity_id: switch.living_room_lamp_switch_8_0

@@ -40,7 +40,12 @@ script: !include_dir_merge_named  includes/scripts
 scene: !include_dir_list  includes/scenes
 
 mqtt: !include includes/mqtt.yaml
-        
+ 
+tts:
+  - platform: google
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300  
 
 # Enables the frontend
 frontend:
