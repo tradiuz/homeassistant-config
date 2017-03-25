@@ -34,3 +34,5 @@ automation.*:
 scene.*:
   hidden: true
 
+sensor.*_pressure:
+  icon: mdi:gauge

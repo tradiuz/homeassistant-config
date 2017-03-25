@@ -1,0 +1,15 @@
+- platform: mqtt
+  state_topic: "hass/5c:cf:7f:c3:cb:d1/enviro/temperature"
+  unit_of_measurement: "°F"
+  name: "Livingroom Temperature"
+
+- platform: mqtt
+  state_topic: "hass/5c:cf:7f:c3:cb:d1/enviro/humidity"
+  unit_of_measurement: "%"
+  name: "Livingroom Humidity"
+
+- platform: mqtt
+  state_topic: "hass/5c:cf:7f:c3:cb:d1/enviro/pressure"
+  unit_of_measurement: "mbar"
+  name: "Livingroom Pressure"
+

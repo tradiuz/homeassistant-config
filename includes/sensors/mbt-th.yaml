@@ -1,11 +1,10 @@
 - platform: mqtt
-  state_topic: "hass/enviro/5c:cf:7f:c3:cb:5d"
+  state_topic: "hass/5c:cf:7f:c3:cb:5d/enviro/temperature"
   unit_of_measurement: "°F"
   name: "Master Bathroom Temperature"
-  value_template: '{{  value_json.temperature  }}'
 
 - platform: mqtt
-  state_topic: "hass/enviro/5c:cf:7f:c3:cb:5d"
+  state_topic: "hass/5c:cf:7f:c3:cb:5d/enviro/humidity"
   unit_of_measurement: "%"
   name: "Master Bathroom Humidity"
-  value_template: '{{  value_json.humidity  }}'
+

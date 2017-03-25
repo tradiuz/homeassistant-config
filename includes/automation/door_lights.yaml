@@ -5,9 +5,15 @@
     from: '23'
     to: '22'
   condition:
-    condition: state
-    entity_id: light.living_room_light_level_11_0
-    state: 'off'
+    condition: or
+    conditions:
+    - condition: sun
+      after: sunset
+    - condition: sun
+      before: sunrise
+    - condition: numeric_state
+      entity_id: sensor.dark_sky_precip_probability
+      above: 75
   action:
     service: homeassistant.turn_on
     entity_id: light.living_room_light_level_11_0

@@ -40,6 +40,7 @@ livingroom:
     - sensor.ftdr
     - sensor.livingroom_temperature
     - sensor.livingroom_humidity
+    - sensor.livingroom_pressure
     - light.living_room_light_level_11_0
     - switch.living_room_lamp_switch_8_0
 

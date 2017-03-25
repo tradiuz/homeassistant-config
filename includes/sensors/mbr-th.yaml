@@ -1,0 +1,10 @@
+- platform: mqtt
+  state_topic: "hass/5c:cf:7f:c3:ae:21/enviro/temperature"
+  unit_of_measurement: "°F"
+  name: "Master Bedroom Temperature"
+
+- platform: mqtt
+  state_topic: "hass/5c:cf:7f:c3:ae:21/enviro/humidity"
+  unit_of_measurement: "%"
+  name: "Master Bedroom Humidity"
+

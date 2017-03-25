@@ -1,3 +1,6 @@
-platform: pushbullet
-api_key: !secret pb_api
-name: 'pb'
+- name: pb
+  platform: pushbullet
+  api_key: !secret pb_api
+- name: twilio_call
+  platform: twilio_call
+  from_number: +17133382739

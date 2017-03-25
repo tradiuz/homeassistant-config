@@ -72,6 +72,10 @@ zwave:
     switch:
       polling_intensity: 2
 
+twilio:
+  account_sid: !secret twilio_account_sid
+  auth_token: !secret twilio_auth_token
+
 switch: !include_dir_list includes/switches
 light: !include_dir_list includes/lightss
 
