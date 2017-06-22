@@ -72,39 +72,17 @@ zwave:
     switch:
       polling_intensity: 2
 
-twilio:
-  account_sid: !secret twilio_account_sid
-  auth_token: !secret twilio_auth_token
-
-switch: !include_dir_list includes/switches
-light: !include_dir_list includes/lightss
-
-
 emulated_hue:
+  type: alexa
   exposed_domains:
     - light
     - switch
-    - imput_boolean
+    - fan
+    - input_boolean
 
-device_tracker:
-  platform: owntracks
-  max_gps_accuracy: 200
-  track_new_devices: false
-
-
-zone: !include_dir_merge_list includes/zones
-
-media_player: !include_dir_merge_named includes/media_players
-  
-
-
-
-#SENSORS
-sensor: !include_dir_merge_list includes/sensors
-
-binary_sensor: !include_dir_merge_list includes/binary_sensors
-
-panel_custom: !include_dir_merge_list panels
+twilio:
+  account_sid: !secret twilio_sid
+  auth_token:  !secret twilio_auth
 
 camera: !include includes/cameras.yaml
 
