@@ -62,6 +62,7 @@ __pycache__
 home-assistant.env
 home-assistant.*
 known_devices.yaml
+options.xml
 alexa.yaml
 secrets.yaml
 emulated_hue.yaml
@@ -76,6 +77,7 @@ icloud
 emulated_hue_ids.json
 plex.conf
 phue.conf
+*.ignore
 *.old
 .*
 !/.gitignore

@@ -40,7 +40,9 @@ script: !include_dir_merge_named  includes/scripts
 scene: !include_dir_list  includes/scenes
 
 mqtt: !include includes/mqtt.yaml
- 
+
+#light: !include_dir_list includes/lights
+
 tts:
   - platform: google
     cache: true
@@ -62,8 +64,9 @@ group: !include includes/groups.yaml
 #Z-Wave devices:
 
 zwave:
-  usb_path: /dev/zwave
+  usb_path: /dev/ttyZWAVE
   device_config: !include zwave_device_config.yaml
+  new_entity_ids: true
   device_config_domain:
     light:
       polling_intensity: 2
@@ -72,13 +75,9 @@ zwave:
     switch:
       polling_intensity: 2
 
-emulated_hue:
-  type: alexa
-  exposed_domains:
-    - light
-    - switch
-    - fan
-    - input_boolean
+zha:
+  usb_path: /dev/ttyZIGBEE
+  database_path: zigbee.db
 
 twilio:
   account_sid: !secret twilio_sid

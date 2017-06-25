@@ -1,0 +1,4 @@
+name: Patrick's Desk Lamp
+platform: zigbee
+pin: 0
+address: b0ce1814030659f0
