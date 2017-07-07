@@ -1,10 +1,10 @@
 name: lr_media_day
 entities:
-  light.living_room_light_level_11:
+  light.living_room_light_level:
     state: off
-  light.rgbw_level_3:
+  light.rgbw_level:
     state: on
     brightness: 255
-  light.rgbw_level_3_5:
+  light.rgbw_level_5:
     state: on
     brightness: 255

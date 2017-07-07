@@ -169,40 +169,38 @@ sensor.master_bedroom_humidity:
 
 sensor.master_bedroom_temperature:
   friendly_name: 'Master Bedroom Temperature'
-  
   hidden: False
   icon: mdi:thermometer
 
 
 
-light.rgbw_level_3_0:
-  friendly_name: 'Ambient Light - Master'
+light.livingroom_rgbw_level:
+  friendly_name: 'Livingroom Ambient Light'
   hidden: false
   
  
-light.rgbw_level_3_0_2:
+light.livingroom_rgbw_level_2:
   friendly_name: 'Ambient Light - Dimmer'
-  hidden: false
+  hidden: true
   
 
-light.rgbw_level_3_0_3:
+light.livingroom_rgbw_level_3:
   friendly_name: 'Ambient Light - R'
-  hidden: false
-  
+  hidden: true  
 
-light.rgbw_level_3_0_4:
+light.livingroom_rgbw_level_4:
   friendly_name: 'Ambient Light - G'
-  hidden: false
+  hidden: true
   
 
-light.rgbw_level_3_0_5:
+light.livingroom_rgbw_level_5:
   friendly_name: 'Ambient Light - B'
-  hidden: false
+  hidden: true
   
 
-light.rgbw_level_3_0_6:
+light.livingroom_rgbw_level_6:
   friendly_name: 'Ambient Light - W'
-  hidden: false
+  hidden: true
   
 
 light.bedroom_light_level:
@@ -211,25 +209,24 @@ light.bedroom_light_level:
   
   hidden: false
 
-light.living_room_light_level_11_0:
+light.livingroom_light_level:
   friendly_name: 'Living Room Light'
   icon: 'mdi:lightbulb-outline'
-  
   hidden: false
 
-switch.back_porch_light_switch_14_0_3:
+switch.back_porch_switch_3:
   friendly_name: 'Laundry Room Light'
   icon: 'mdi:lightbulb'
   hidden: false
   
 
-switch.back_porch_light_switch_14_0_2:
+switch.back_porch_switch_2:
   friendly_name: 'Back Porch Light'
   icon: 'mdi:lightbulb'
   hidden: false
   
 
-switch.back_porch_light_switch_14_0:
+switch.back_porch_switch:
   friendly_name: 'back porch light master'
   hidden: true
   
@@ -238,7 +235,12 @@ switch.kitchen_sink_light_switch:
   friendly_name: 'Kitchen Sink Light'
   icon: 'mdi:lightbulb'
   hidden: false
-  
+
+switch.kitchen_stove_light_switch:
+  friendly_name: 'Kitchen Stove Light'
+  icon: 'mdi:lightbulb'
+  hidden: false
+
  
 switch.snake_tank_light_switch:
   friendly_name: 'Snake Tank Light'
@@ -268,5 +270,14 @@ light.sengled_e11g13_03064d79_1:
   friendly_name: 'Tiffanys Desk Light'
   icon: 'mdi:lightbulb'
   hidden: false
-  
+
+light.sengled_e11g13_030715d6_1:
+  friendly_name: 'Hobby Room Lamp'
+  icon: 'mdi:lightbulb'
+  hidden: false
+
+light.sengled_e11g13_0306f4f2_1:
+  friendly_name: 'Hobby Room Light'
+  icon: 'mdi:lightbulb'
+  hidden: false
 

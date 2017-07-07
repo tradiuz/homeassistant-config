@@ -4,4 +4,4 @@
     event: sunset
   action:
     service: switch.turn_off
-    entity_id: switch.snake_tank_light_switch_5_0
+    entity_id: switch.snake_tank_light_switch

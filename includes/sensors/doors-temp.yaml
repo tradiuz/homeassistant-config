@@ -2,10 +2,10 @@
   sensors:
     bkdr:
       friendly_name: "Back Door"
-      value_template: '{% if is_state("sensor.back_door_access_control_12_9","22") %}Open{% elif is_state("sensor.back_door_access_control_12_9","23") %}Closed{% else %}Error{% endif %}'
-      icon_template:  '{% if is_state("sensor.back_door_access_control_12_9","22") %}mdi:checkbox-blank-outline{% elif is_state("sensor.back_door_access_control_12_9","23") %}mdi:checkbox-blank{% else %}mdi:close-circle{% endif %}'
+      value_template: '{% if is_state("sensor.back_door_access_control","22") %}Open{% elif is_state("sensor.back_door_access_control","23") %}Closed{% else %}Error{% endif %}'
+      icon_template:  '{% if is_state("sensor.back_door_access_control","22") %}mdi:checkbox-blank-outline{% elif is_state("sensor.back_door_access_control","23") %}mdi:checkbox-blank{% else %}mdi:close-circle{% endif %}'
     ftdr:
       friendly_name: "Front Door"
-      value_template: '{% if is_state("sensor.front_door_access_control_13_9","22") %}Open{% elif is_state("sensor.front_door_access_control_13_9","23") %}Closed{% else %}Error{% endif %}'
-      icon_template: '{% if is_state("sensor.front_door_access_control_13_9","22") %}mdi:checkbox-blank-outline{% elif is_state("sensor.front_door_access_control_13_9","23") %}mdi:checkbox-blank{% else %}mdi:close-circle{% endif %}'
+      value_template: '{% if is_state("sensor.front_door_access_control","22") %}Open{% elif is_state("sensor.front_door_access_control","23") %}Closed{% else %}Error{% endif %}'
+      icon_template: '{% if is_state("sensor.front_door_access_control","22") %}mdi:checkbox-blank-outline{% elif is_state("sensor.front_door_access_control","23") %}mdi:checkbox-blank{% else %}mdi:close-circle{% endif %}'
 

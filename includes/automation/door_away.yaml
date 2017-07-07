@@ -1,7 +1,7 @@
 - alias: 'Turn on lights when opening doors'
   trigger:
     platform: state
-    entity_id: sensor.back_door_access_control_12_9, sensor.front_door_access_control_13_9
+    entity_id: sensor.back_door_access_control, sensor.front_door_access_control
     from: '23'
     to: '22'
   condition:

@@ -1,7 +1,7 @@
 - alias: 'Turn on the snake tank light at 10:30AM during the weekend'
   trigger:
     platform: time
-    after: "9:00"
+    at: "9:00"
   condition: 
   - condition: time
     weekday:
@@ -12,5 +12,5 @@
       - fri
   action:
     service: switch.turn_on
-    entity_id: switch.snake_tank_light_switch_5_0
+    entity_id: switch.snake_tank_light_switch
 
