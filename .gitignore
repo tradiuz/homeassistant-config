@@ -81,4 +81,4 @@ phue.conf
 *.old
 .*
 !/.gitignore
-
+!.travis.yml
