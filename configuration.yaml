@@ -16,10 +16,10 @@ config:
 recorder:
   exclude:
     entities:
-      - sensor.rgbw_exporting_3_32
-      - sensor.rgbw_power_3_8
-      - sensor.rgbw_power_3_4
-      - sensor.rgbw_energy_3_0
+      - sensor.livingroom_rgbw_exporting
+      - sensor.livingroom_rgbw_energy
+      - sensor.livingroom_rgbw_power
+      - sensor.livingroom_rgbw_power_2
 
 http:
   api_password: !secret http_api
@@ -61,6 +61,8 @@ logbook:
 
 group: !include includes/groups.yaml
 
+sensor: !include_dir_merge_list includes/sensors/
+
 #Z-Wave devices:
 
 zwave:
@@ -86,3 +88,7 @@ twilio:
 camera: !include includes/cameras.yaml
 
 input_select: !include includes/input_select.yaml
+
+octoprint:
+  host: !secret octo_host
+  api_key: !secret octo_api

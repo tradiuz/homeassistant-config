@@ -53,14 +53,12 @@ sensor.dark_sky_ozone:
 
 sensor.dark_sky_precip:
   friendly_name: 'Rainfall'
-  
   hidden: True
   icon: mdi:weather-pouring
 
-
 sensor.dark_sky_precip_intensity:
   friendly_name: 'Dark Sky Precip Intensity'
-  
+ 
   hidden: True
   icon: mdi:weather-rainy
 
@@ -280,4 +278,10 @@ light.sengled_e11g13_0306f4f2_1:
   friendly_name: 'Hobby Room Light'
   icon: 'mdi:lightbulb'
   hidden: false
+
+light.sengled_e11g13_030706ab_1:
+  friendly_name: 'Sewing Light'
+  icon: 'mdi:lightbulb'
+  hidden: false
+
 

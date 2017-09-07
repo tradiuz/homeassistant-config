@@ -26,9 +26,8 @@ master_bedroom:
   entities:
     - sensor.master_bedroom_temperature
     - sensor.master_bedroom_humidity
-    - light.bedroom_light_level_4_0
-    - switch.night_stand_light_switch_6_0
-    - switch.snake_tank_light_switch_5_0
+    - light.bedroom_light_level
+    - switch.night_stand_light_switch
 master_bathroom:
   name: Master Bathroom
   entities:
@@ -41,8 +40,10 @@ livingroom:
     - sensor.livingroom_temperature
     - sensor.livingroom_humidity
     - sensor.livingroom_pressure
-    - light.living_room_light_level_11_0
-    - switch.living_room_lamp_switch_8_0
+    - light.livingroom_light_level
+    - light.livingroom_rgbw_level
+    - light.sengled_e11g13_030659f0_1
+    - light.sengled_e11g13_03064d79_1
 
 kitchen:
   name: Kitchen
@@ -50,12 +51,21 @@ kitchen:
     - sensor.bkdr
     - sensor.kitchen_temperature
     - sensor.kitchen_humidity
-    - switch.kitchen_sink_light_switch_2_0
-    - switch.kitchen_stove_light_switch_9_0
-    - sensor.leak_detector_temperature_10_1
+    - switch.kitchen_sink_light_switch
+    - switch.kitchen_stove_light_switch
+    - sensor.leak_detector_temperature
+
+hobby_room:
+  name: Hobby Room
+  entities:
+    - switch.snake_tank_light_switch
+    - light.sengled_e11g13_0306f4f2_1
+    - light.sengled_e11g13_030715d6_1 
+    - light.sengled_e11g13_030706ab_1
+
 
 outside:
   name: Outside
   entities:
-    - switch.back_porch_light_switch_14_0_3
-    - switch.back_porch_light_switch_14_0_2
+    - switch.back_porch_switch_2
+    - switch.back_porch_switch_3
