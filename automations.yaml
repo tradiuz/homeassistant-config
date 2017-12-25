@@ -1,0 +1,24 @@
+- action:
+  - data:
+      entity_id:
+      - switch.catfud_ziggy
+      - switch.catfud_utensi
+      - switch.catfud_marley
+    service: switch.turn_on
+  - delay: 00:05:00
+  - data:
+      entity_id:
+      - switch.catfud_ziggy
+      - switch.catfud_utensi
+      - switch.catfud_marley
+    service: switch.turn_on
+  alias: Feed Cats
+  condition: []
+  id: '1505309800152'
+  trigger:
+  - at: '8:00'
+    platform: time
+  - at: '16:00'
+    platform: time
+  - at: 00:00
+    platform: time

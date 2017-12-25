@@ -234,11 +234,6 @@ switch.kitchen_sink_light_switch:
   icon: 'mdi:lightbulb'
   hidden: false
 
-switch.kitchen_stove_light_switch:
-  friendly_name: 'Kitchen Stove Light'
-  icon: 'mdi:lightbulb'
-  hidden: false
-
  
 switch.snake_tank_light_switch:
   friendly_name: 'Snake Tank Light'
@@ -270,7 +265,7 @@ light.sengled_e11g13_03064d79_1:
   hidden: false
 
 light.sengled_e11g13_030715d6_1:
-  friendly_name: 'Hobby Room Lamp'
+  friendly_name: 'Kitchen Light'
   icon: 'mdi:lightbulb'
   hidden: false
 
@@ -284,4 +279,7 @@ light.sengled_e11g13_030706ab_1:
   icon: 'mdi:lightbulb'
   hidden: false
 
-
+light.sengled_e11g13_0306ff7f_1:
+  friendly_name: 'Kitchen Stove Light'
+  icon: 'mdi:lightbulb'
+  hidden: false

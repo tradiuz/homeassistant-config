@@ -28,6 +28,7 @@ master_bedroom:
     - sensor.master_bedroom_humidity
     - light.bedroom_light_level
     - switch.night_stand_light_switch
+    - switch.snake_tank_light_switch
 master_bathroom:
   name: Master Bathroom
   entities:
@@ -52,15 +53,14 @@ kitchen:
     - sensor.kitchen_temperature
     - sensor.kitchen_humidity
     - switch.kitchen_sink_light_switch
-    - switch.kitchen_stove_light_switch
+    - light.sengled_e11g13_0306ff7f_1
     - sensor.leak_detector_temperature
+    - light.sengled_e11g13_030715d6_1
 
 hobby_room:
   name: Hobby Room
   entities:
-    - switch.snake_tank_light_switch
     - light.sengled_e11g13_0306f4f2_1
-    - light.sengled_e11g13_030715d6_1 
     - light.sengled_e11g13_030706ab_1
 
 

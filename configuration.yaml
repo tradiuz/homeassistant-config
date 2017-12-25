@@ -92,3 +92,23 @@ input_select: !include includes/input_select.yaml
 octoprint:
   host: !secret octo_host
   api_key: !secret octo_api
+  bed: true
+  number_of_tools: 1
+
+switch:
+  platform: command_line
+  switches: 
+    catfud_ziggy:
+      command_on: "/usr/bin/curl -X GET http://10.13.13.92/control?cmd=event,feedcats"
+      command_off: "/usr/bin/curl -X GET http://10.13.13.92/control?cmd=event,stopfeed"
+      friendly_name: Ziggy's Feeder
+    catfud_utensi:
+      command_on: "/usr/bin/curl -X GET http://10.13.13.91/control?cmd=event,feedcats"
+      command_off: "/usr/bin/curl -X GET http://10.13.13.91/control?cmd=event,stopfeed"
+      friendly_name: Utensi's Feeder
+    catfud_marley:
+      command_on: "/usr/bin/curl -X GET http://10.13.13.93/control?cmd=event,feedcats"
+      command_off: "/usr/bin/curl -X GET http://10.13.13.93/control?cmd=event,stopfeed"
+      friendly_name: Marley's Feeder
+
+
