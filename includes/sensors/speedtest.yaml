@@ -3,4 +3,11 @@
    - ping
    - upload
    - download
-  server_id: 6600
+#  server_id: 6600
+  hour:
+   - 0
+   - 4
+   - 8
+   - 12
+   - 16
+   - 20

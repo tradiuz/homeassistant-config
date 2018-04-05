@@ -1,0 +1,296 @@
+light.livingroom_light_level:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076299265
+light.livingroom_rgbw_level:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093076481
+light.livingroom_rgbw_level_2:
+  name:
+  platform: zwave
+  unique_id: 3-144115188131004417
+light.livingroom_rgbw_level_3:
+  name:
+  platform: zwave
+  unique_id: 3-216172782168932353
+light.livingroom_rgbw_level_4:
+  name:
+  platform: zwave
+  unique_id: 3-288230376206860289
+light.livingroom_rgbw_level_5:
+  name:
+  platform: zwave
+  unique_id: 3-360287970244788225
+light.livingroom_rgbw_level_6:
+  name:
+  platform: zwave
+  unique_id: 3-432345564282716161
+sensor.livingroom_rgbw_power:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093256770
+sensor.livingroom_rgbw_energy:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273090
+sensor.livingroom_rgbw_power_2:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273218
+sensor.livingroom_rgbw_exporting:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273600
+switch.spare_aeon_switch_switch:
+  name:
+  platform: zwave
+  unique_id: 4-72057594109837312
+sensor.spare_aeon_switch_power:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110033986
+sensor.spare_aeon_switch_energy:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050306
+sensor.spare_aeon_switch_previous_reading:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050322
+sensor.spare_aeon_switch_interval:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050339
+sensor.spare_aeon_switch_power_2:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050434
+sensor.spare_aeon_switch_previous_reading_2:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050450
+sensor.spare_aeon_switch_interval_2:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050467
+sensor.spare_aeon_switch_exporting:
+  name:
+  platform: zwave
+  unique_id: 4-72057594110050816
+switch.snake_tank_light_switch:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126614528
+sensor.snake_tank_light_power:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126811202
+sensor.snake_tank_light_energy:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827522
+sensor.snake_tank_light_previous_reading:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827538
+sensor.snake_tank_light_interval:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827555
+sensor.snake_tank_light_power_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827650
+sensor.snake_tank_light_previous_reading_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827666
+sensor.snake_tank_light_interval_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126827683
+sensor.snake_tank_light_exporting:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126828032
+binary_sensor.front_door_sensor:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143571968
+binary_sensor.back_door_sensor:
+  name:
+  platform: zwave
+  unique_id: 7-72057594160349184
+sensor.back_door_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414145
+sensor.back_door_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414161
+sensor.back_door_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414177
+sensor.back_door_access_control:
+  name:
+  platform: zwave
+  unique_id: 7-72057594161414289
+switch.kitchen_sink_light_switch:
+  name:
+  platform: zwave
+  unique_id: 8-72057594176946176
+light.bedroom_light_level:
+  name:
+  platform: zwave
+  unique_id: 9-72057594193739777
+switch.nightstand_light_switch:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210500608
+sensor.nightstand_light_power:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210697282
+sensor.nightstand_light_energy:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713602
+sensor.nightstand_light_previous_reading:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713618
+sensor.nightstand_light_interval:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713635
+sensor.nightstand_light_power_2:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713730
+sensor.nightstand_light_previous_reading_2:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713746
+sensor.nightstand_light_interval_2:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210713763
+sensor.nightstand_light_exporting:
+  name:
+  platform: zwave
+  unique_id: 10-72057594210714112
+switch.spare_switch_switch:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227277824
+sensor.spare_switch_power:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227474498
+sensor.spare_switch_energy:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227490818
+sensor.spare_switch_previous_reading:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227490834
+sensor.spare_switch_interval:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227490851
+sensor.spare_switch_power_2:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227490946
+sensor.spare_switch_previous_reading_2:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227490962
+sensor.spare_switch_interval_2:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227490979
+sensor.spare_switch_exporting:
+  name:
+  platform: zwave
+  unique_id: 11-72057594227491328
+switch.back_porch_switch:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244055040
+switch.back_porch_switch_2:
+  name:
+  platform: zwave
+  unique_id: 12-144115188281982976
+switch.back_porch_switch_3:
+  name:
+  platform: zwave
+  unique_id: 12-216172782319910912
+sensor.back_porch_power:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244251714
+sensor.back_porch_energy:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268034
+sensor.back_porch_previous_reading:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268050
+sensor.back_porch_interval:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268067
+sensor.back_porch_power_2:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268162
+sensor.back_porch_previous_reading_2:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268178
+sensor.back_porch_interval_2:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268195
+sensor.back_porch_exporting:
+  name:
+  platform: zwave
+  unique_id: 12-72057594244268544
+sensor.smoke_co_alarm_alarm_type:
+  name:
+  platform: zwave
+  unique_id: 13-72057594262077441
+sensor.smoke_co_alarm_alarm_level:
+  name:
+  platform: zwave
+  unique_id: 13-72057594262077457
+light.sengled_e11g13_03064d79_1:
+  name:
+  platform: zha
+  unique_id: b0:ce:18:14:03:06:4d:79-1
+light.sengled_e11g13_030715d6_1:
+  name:
+  platform: zha
+  unique_id: b0:ce:18:14:03:07:15:d6-1
+light.sengled_e11g13_030706ab_1:
+  name:
+  platform: zha
+  unique_id: b0:ce:18:14:03:07:06:ab-1
+light.sengled_e11g13_0306f4f2_1:
+  name:
+  platform: zha
+  unique_id: b0:ce:18:14:03:06:f4:f2-1
+light.sengled_e11g13_030659f0_1:
+  name:
+  platform: zha
+  unique_id: b0:ce:18:14:03:06:59:f0-1
+light.sengled_e11g13_0306ff7f_1:
+  name:
+  platform: zha
+  unique_id: b0:ce:18:14:03:06:ff:7f-1

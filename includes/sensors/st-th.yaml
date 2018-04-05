@@ -1,0 +1,19 @@
+- platform: mqtt
+  state_topic: "hass/tank/enviro/temperature"
+  unit_of_measurement: "°C"
+  name: "Snake Tank Ambient Temperature"
+
+- platform: mqtt
+  state_topic: "hass/tank/enviro/humidity"
+  unit_of_measurement: "%"
+  name: "Snake Tank Ambient Humidity"
+
+- platform: mqtt
+  state_topic: "hass/tank/probe_1/Temperature"
+  unit_of_measurement: "°C"
+  name: "Snake Tank Hot Side Temperature"
+
+- platform: mqtt
+  state_topic: "hass/tank/probe_2/Temperature"
+  unit_of_measurement: "°C"
+  name: "Snake Tank Cold Side Temperature"
