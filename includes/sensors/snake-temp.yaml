@@ -1,0 +1,10 @@
+- platform: mqtt
+  state_topic: "hass/snake_tank/coldside/temperature"
+  unit_of_measurement: "°F"
+  name: "Snake Tank Temp - Cold Side"
+
+- platform: mqtt
+  state_topic: "hass/snake_tank/hotside/temperature"
+  unit_of_measurement: "°F"
+  name: "Snake Tank Temp - Hot Side"
+

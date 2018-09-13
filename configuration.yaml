@@ -28,6 +28,7 @@ recorder:
 
 http:
   api_password: !secret http_api
+  base_url: !secret base_url
   
 # Checks for available updates
 updater:
@@ -36,8 +37,7 @@ updater:
 conversation:
 
 #Automation
-automation: !include_dir_merge_list /config/includes/automation 
-
+automation: !include automations.yaml
 notify: !include /config/includes/notify.yaml
 
 script: !include_dir_merge_named  /config/includes/scripts
@@ -104,20 +104,12 @@ zoneminder:
   username: !secret zm_user
   password: !secret zm_pass
 
-switch:
-  platform: command_line
-  switches: 
-    catfud_ziggy:
-      command_on: "/usr/bin/curl -X GET http://10.13.13.92/control?cmd=event,feedcats"
-      command_off: "/usr/bin/curl -X GET http://10.13.13.92/control?cmd=event,stopfeed"
-      friendly_name: Ziggy's Feeder
-    catfud_utensi:
-      command_on: "/usr/bin/curl -X GET http://10.13.13.91/control?cmd=event,feedcats"
-      command_off: "/usr/bin/curl -X GET http://10.13.13.91/control?cmd=event,stopfeed"
-      friendly_name: Utensi's Feeder
-    catfud_marley:
-      command_on: "/usr/bin/curl -X GET http://10.13.13.93/control?cmd=event,feedcats"
-      command_off: "/usr/bin/curl -X GET http://10.13.13.93/control?cmd=event,stopfeed"
-      friendly_name: Marley's Feeder
-
-
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
+    aliases:
+      099b3ea38fbc011cc22716271c58e12a2a110395: 'Everywhere'
+      
+openuv:
+  api_key: !secret openuv_api

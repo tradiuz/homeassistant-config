@@ -5,12 +5,26 @@
 #    - group.Livingroom
 #    - group.Kitchen
 
+cameras:
+  name: Cameras
+  entities:
+    - camera.backporch
+    - camera.front_porch
+    - camera.front_wide
+    - camera.side_back
+
+card_cameras:
+  name: Cameras
+  icon: mdi:cctv
+  view: yes
+  entities:
+    - group.cameras
+
 people:
   name: People
   entities:
-    - device_tracker.pforristal_ptfs7
-    - device_tracker.tforristal_trfs6
-    - device_tracker.bforristal_bcfgp
+    - device_tracker.pforristal_ptfs9
+    - device_tracker.tforristal_trfs8
 
 weather:
   name: Weather
@@ -69,3 +83,10 @@ outside:
   entities:
     - switch.back_porch_switch_2
     - switch.back_porch_switch_3
+
+node_scenes:
+  name: Node-RED Scenes
+  entities:
+    - sensor.scene__good_morning
+    - sensor.scene__good_night
+    - sensor.scene__snake_tank

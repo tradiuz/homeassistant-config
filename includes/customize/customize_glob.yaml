@@ -36,3 +36,8 @@ scene.*:
 
 sensor.*_pressure:
   icon: mdi:gauge
+
+sensor.scene__.*:
+  icon: hass:remote
+  templates:
+    rgb_color: "if (state === 'true') return [251, 210, 41]; else return [54, 95, 140];"

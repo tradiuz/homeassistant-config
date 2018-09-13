@@ -1,0 +1,121 @@
+title: Forristal Home
+views:
+  - title: Cameras
+    id: cameras
+    icon: mdi:cctv
+    cards: 
+      - type: picture-glance
+        title: Front Door
+        entities:
+          - camera.front_porch
+          - sensor.ftdr
+        camera_image: camera.front_porch
+      - type: picture-glance
+        title: Front Yard
+        entities:
+          - camera.front_wide
+        camera_image: camera.front_wide
+      - type: picture-glance
+        title: Back Porch
+        entities:
+          - camera.backporch
+          - sensor.bkdr
+          - switch.back_porch_switch_3
+          - switch.back_porch_switch_2
+        camera_image: camera.backporch
+      - type: picture-glance
+        title: Side/Back Yard
+        entities:
+          - camera.side_back
+        camera_image: camera.side_back
+
+
+  - title: Living Room
+    id: living
+    icon: mdi:sofa
+    cards:
+      - type: entities
+        title: Lights
+        entities:
+          - light.livingroom_light_level
+          - light.sengled_e11g13_030659f0_1
+          - light.sengled_e11g13_03064d79_1
+          - light.livingroom_rgbw_level
+      - type: glance
+        title: Sensors
+        entities:
+          - entity: sensor.ftdr
+          - entity: sensor.livingroom_temperature
+            name: Temp
+          - entity: sensor.livingroom_humidity
+            name: Humidity
+          - entity: sensor.livingroom_pressure
+            name: Pressure
+
+
+  - title: Kitchen
+    id: kitchen
+    icon: mdi:fridge
+    cards:
+      - type: entities
+        title: Lights
+        entities:
+          - light.sengled_e11g13_0306ff7f_1
+          - light.sengled_e11g13_030715d6_1
+          - switch.kitchen_sink_light_switch
+      - type: glance
+        title: Sensors
+        entities:
+          - entity: sensor.bkdr
+          - entity: sensor.kitchen_temperature
+            name: Temp
+          - entity: sensor.kitchen_humidity
+            name: Humidity
+
+  - title: Master Bedroom
+    id: masterbr
+    icon: mdi:hotel
+    cards:
+      - type: entities
+        title: Lights
+        entities:
+          - light.bedroom_light_level
+          - switch.nightstand_light_switch
+          - switch.spare_switch_switch
+          - switch.spare_aeon_switch_switch
+          - switch.snake_tank_light_switch
+ 
+      - type: glance
+        title: Sensors
+        entities:
+          - entity: sensor.master_bedroom_temperature
+            name: Temp
+          - entity: sensor.master_bedroom_humidity
+            name: Humidity
+      - type: glance
+        title: Snake Tank
+        entities:
+          - entity: sensor.snake_tank_temp__cold_side
+            name: Cold Side
+          - entity: sensor.snake_tank_temp__hot_side
+            name: Hot Side
+          - entity: switch.snake_tank_light_switch
+            name: Light
+  - title: Hobby Room
+    id: hobby
+    icon: mdi:flask
+    cards:
+      - type: entities
+        title: Lights
+        entities:
+          - light.sengled_e11g13_0306f4f2_1
+          - light.sengled_e11g13_030706ab_1
+      - type: picture-glance
+        title: Maker Select
+        entities:
+          -  camera.octoprint
+          -  sensor.maker_select_current_state
+          -  sensor.maker_select_job_percentage
+          -  sensor.maker_select_actual_tool0_temp
+          -  sensor.maker_select_actual_bed_temp
+        camera_image: camera.octoprint

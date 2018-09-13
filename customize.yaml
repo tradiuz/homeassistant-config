@@ -1,0 +1,10 @@
+sensor.scene__good_morning:
+  icon: hass:remote
+sensor.scene__good_night:
+  icon: hass:remote
+sensor.scene__snake_tank:
+  icon: hass:remote
+zwave.spare_aeon_switch:
+  friendly_name: Bed Glow
+switch.unknown_node_14_switch:
+  friendly_name: Soldering Station Switch

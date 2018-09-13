@@ -1,0 +1,21 @@
+- platform: mqtt
+  state_topic: "hass/node-red/scenes/good_night/active"
+  name: "Scene - Good Night"
+  availability_topic: "hass/node-red/status"
+  payload_available: "online"
+  payload_not_available: "offline"
+
+- platform: mqtt
+  state_topic: "hass/node-red/scenes/good_morning/active"
+  name: "Scene - Good Morning"
+  availability_topic: "hass/node-red/status"
+  payload_available: "online"
+  payload_not_available: "offline"
+
+- platform: mqtt
+  state_topic: "hass/node-red/scenes/snake_tank/active"
+  name: "Scene - Snake Tank"
+  availability_topic: "hass/node-red/status"
+  payload_available: "online"
+  payload_not_available: "offline"
+

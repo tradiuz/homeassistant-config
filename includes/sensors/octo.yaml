@@ -4,9 +4,3 @@
     - Current State
     - Temperatures
     - Job Percentage
-
-- platform: mqtt
-  state_topic: "hass/5c:cf:7f:c3:cb:5d/enviro/humidity"
-  unit_of_measurement: "%"
-  name: "Master Bathroom Humidity"
-
