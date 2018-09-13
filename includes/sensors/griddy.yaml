@@ -1,0 +1,7 @@
+- platform: rest
+  name: griddy
+  resource: https://app.gogriddy.com/api/v1/insights/getnow
+  method: POST
+  payload: !secret griddy_json
+  value_template: '{{ value_json["now"]["price_ckwh"] }}'
+  unit_of_measurement: "¢/kwh"
