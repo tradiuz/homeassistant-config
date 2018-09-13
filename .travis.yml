@@ -23,4 +23,4 @@ install:
   - pip3 install $HASS
   - hass --version
 script:
-  - hass --config ./ --script check_config
+  - hass --config /home/travis/build/tradiuz/homeassistant-config/ --script check_config
