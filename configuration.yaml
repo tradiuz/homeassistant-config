@@ -5,8 +5,8 @@ homeassistant:
   latitude: !secret home_latitude
   longitude: !secret home_longitude
   elevation: !secret home_elevation
-  customize: !include /config/includes/customize/customized.yaml
-  customize_glob: !include /config/includes/customize/customize_glob.yaml
+  customize: !include includes/customize/customized.yaml
+  customize_glob: !include includes/customize/customize_glob.yaml
 
 # Track the sun
 sun:
@@ -38,13 +38,13 @@ conversation:
 
 #Automation
 automation: !include automations.yaml
-notify: !include /config/includes/notify.yaml
+notify: !include includes/notify.yaml
 
-script: !include_dir_merge_named  /config/includes/scripts
+script: !include_dir_merge_named  includes/scripts
 
-scene: !include_dir_list  /config/includes/scenes
+scene: !include_dir_list  includes/scenes
 
-mqtt: !include /config/includes/mqtt.yaml
+mqtt: !include includes/mqtt.yaml
 
 #light: !include_dir_list includes/lights
 
@@ -64,9 +64,9 @@ history:
 # View all events in a logbook
 logbook:
 
-group: !include /config/includes/groups.yaml
+group: !include includes/groups.yaml
 
-sensor: !include_dir_merge_list /config/includes/sensors/
+sensor: !include_dir_merge_list includes/sensors/
 
 #Z-Wave devices:
 
@@ -83,15 +83,15 @@ zwave:
 
 zha:
   usb_path: /dev/ttyZIGBEE
-  database_path: /config/zigbee.db
+  database_path: zigbee.db
 
 twilio:
   account_sid: !secret twilio_sid
   auth_token:  !secret twilio_auth
 
-camera: !include /config/includes/cameras.yaml
+camera: !include includes/cameras.yaml
 
-input_select: !include /config/includes/input_select.yaml
+input_select: !include includes/input_select.yaml
 
 octoprint:
   host: !secret octo_host
