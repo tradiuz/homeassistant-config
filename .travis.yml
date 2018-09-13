@@ -22,6 +22,8 @@ before_install:
 install:
   - pip3 install $HASS
   - hass --version
-  - ls -la
+  - mkdir /config
+  - mv -R ./* /config/
+  - cd /config
 script:
   - hass --config . --script check_config
