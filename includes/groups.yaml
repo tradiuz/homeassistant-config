@@ -29,33 +29,27 @@ weather:
     - sensor.dark_sky_humidity
     - sensor.dark_sky_precip_probability
     - binary_sensor.iss
-master_bedroom:
-  name: Master Bedroom
+master_bedroom_lights:
+  name: Master Bedroom Lights
   entities:
-    - sensor.master_bedroom_temperature
-    - sensor.master_bedroom_humidity
     - light.bedroom_light_level
     - switch.night_stand_light_switch
     - switch.snake_tank_light_switch
-master_bathroom:
-  name: Master Bathroom
+master_bathroom_sensors:
+  name: Master Bathroom Sensors
   entities:
     - sensor.master_bathroom_temperature
     - sensor.master_bathroom_humidity
-livingroom:
-  name: Livingroom
+livingroom_lights:
+  name: Livingroom Lights
   entities:
-    - sensor.ftdr
-    - sensor.livingroom_temperature
-    - sensor.livingroom_humidity
-    - sensor.livingroom_pressure
     - light.livingroom_light_level
     - light.livingroom_rgbw_level
     - light.tiffanys_desk_light
     - light.patricks_desk_light
 
-kitchen:
-  name: Kitchen
+kitchen_lights:
+  name: Kitchen Lights
   entities:
     - sensor.bkdr
     - sensor.kitchen_temperature
@@ -65,22 +59,16 @@ kitchen:
     - sensor.leak_detector_temperature
     - light.kitchen_stove_light
 
-hobby_room:
-  name: Hobby Room
+hobby_room_lights:
+  name: Hobby Room Lights
   entities:
     - light.hobby_room_light
     - light.sewing_light
 
 
-outside:
-  name: Outside
+outside_lights:
+  name: Outside Lights
   entities:
     - switch.back_porch_switch_2
     - switch.back_porch_switch_3
 
-node_scenes:
-  name: Node-RED Scenes
-  entities:
-    - sensor.scene__good_morning
-    - sensor.scene__good_night
-    - sensor.scene__snake_tank
