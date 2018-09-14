@@ -38,8 +38,8 @@ views:
         title: Lights
         entities:
           - light.livingroom_light_level
-          - light.sengled_e11g13_030659f0_1
-          - light.sengled_e11g13_03064d79_1
+          - light.patricks_desk_light
+          - light.tiffanys_desk_light
           - light.livingroom_rgbw_level
       - type: glance
         title: Sensors
@@ -60,8 +60,8 @@ views:
       - type: entities
         title: Lights
         entities:
-          - light.sengled_e11g13_0306ff7f_1
-          - light.sengled_e11g13_030715d6_1
+          - light.kitchen_stove_light
+          - light.kitchen_light
           - switch.kitchen_sink_light_switch
       - type: glance
         title: Sensors
@@ -81,8 +81,8 @@ views:
         entities:
           - light.bedroom_light_level
           - switch.nightstand_light_switch
-          - switch.spare_switch_switch
-          - switch.spare_aeon_switch_switch
+          - switch.orange_light_switch
+          - switch.bed_glow_switch
           - switch.snake_tank_light_switch
  
       - type: glance
@@ -108,8 +108,8 @@ views:
       - type: entities
         title: Lights
         entities:
-          - light.sengled_e11g13_0306f4f2_1
-          - light.sengled_e11g13_030706ab_1
+          - light.hobby_room_light
+          - light.sewing_light
       - type: picture-glance
         title: Maker Select
         entities:
