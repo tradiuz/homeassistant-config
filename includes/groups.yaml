@@ -72,3 +72,11 @@ outside_lights:
     - switch.back_porch_switch_2
     - switch.back_porch_switch_3
 
+actual_lights:
+  name: Actual Lights
+  entities: 
+    - group.hobby_room_lights
+    - group.kitchen_lights
+    - group.livingroom_lights
+    - group.outside_lights
+    - group.master_bedroom_lights

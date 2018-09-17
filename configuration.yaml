@@ -113,3 +113,7 @@ media_player:
       
 openuv:
   api_key: !secret openuv_api
+
+habitica:
+  - api_user: !secret habitica_user
+    api_key: !secret habitica_key
