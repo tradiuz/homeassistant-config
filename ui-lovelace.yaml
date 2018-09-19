@@ -41,6 +41,11 @@ views:
           - light.patricks_desk_light
           - light.tiffanys_desk_light
           - light.livingroom_rgbw_level
+      - type: entities
+        title: Switches
+        show_header_toggle: false
+        entities:
+          - switch.solder_station_plug_switch
       - type: glance
         title: Sensors
         entities:
@@ -118,4 +123,5 @@ views:
           -  sensor.maker_select_job_percentage
           -  sensor.maker_select_actual_tool0_temp
           -  sensor.maker_select_actual_bed_temp
+          -  switch.3d_printer_plug_switch
         camera_image: camera.octoprint

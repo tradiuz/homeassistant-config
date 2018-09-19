@@ -286,3 +286,10 @@ light.sengled_e11g13_0306ff7f_1:
   friendly_name: 'Kitchen Stove Light'
   icon: 'mdi:lightbulb'
   hidden: false
+
+switch.orange_light_switch:
+  icon: 'mdi:lightbulb'
+
+switch.bed_glow_switch:
+  icon: 'mdi:lightbulb'
+
