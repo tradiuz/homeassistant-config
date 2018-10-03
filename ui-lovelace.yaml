@@ -57,6 +57,19 @@ views:
             name: Humidity
           - entity: sensor.livingroom_pressure
             name: Pressure
+      - type: glance
+        title: A/C
+        entities:
+          - entity: switch.livingroom_ac_power
+            name: A/C
+          - entity: switch.livingroom_ac_mode
+            name: Cool
+            tap_action: call-service
+            service: switch.turn_on
+          - entity: switch.livingroom_ac_mode
+            name: Fan-Only
+            tap_action: call-service
+            service: switch.turn_off
 
 
   - title: Kitchen
