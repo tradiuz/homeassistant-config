@@ -8,4 +8,8 @@
       friendly_name: "Front Door"
       value_template: '{% if is_state("sensor.front_dr_access_control","22") %}Open{% elif is_state("sensor.front_dr_access_control","23") %}Closed{% else %}Error{% endif %}'
       icon_template: '{% if is_state("sensor.front_dr_access_control","22") %}mdi:door-open{% elif is_state("sensor.front_dr_access_control","23") %}mdi:door-closed{% else %}mdi:close-circle{% endif %}'
-
+    mailbox:
+      friendly_name: "Mailbox"
+      value_template: '{% if is_state("sensor.mail_sensor_access_control","22") %}Open{% elif is_state("sensor.mail_sensor_access_control","23") %}Closed{% else %}Error{% endif %}'
+      icon_template: '{% if is_state("sensor.front_dr_access_control","22") %}mdi:package-variant{% elif is_state("sensor.front_dr_access_control","23") %}mdi:package-variant-closed{% else %}mdi:close-circle{% endif %}'
+ 
