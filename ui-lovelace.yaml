@@ -71,6 +71,9 @@ views:
           65: '#33bbff'
           75: '#44ff33'
           100: '#ff3333'
+        style:
+          width: 75px
+          height: 75px
       - type: glance
         title: A/C
         entities:
