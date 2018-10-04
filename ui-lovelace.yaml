@@ -74,16 +74,6 @@ views:
             tap_action: call-service
             service: switch.turn_off
             icon: mdi:fan
-          - entity: switch.livingroom_ac_temp
-            name: T+
-            tap_action: call-service
-            service: switch.turn_on
-            icon: mdi:fan
-          - entity: switch.livingroom_ac_temp
-            name: T-
-            tap_action: call-service
-            service: switch.turn_off
-            icon: mdi:fan
 
 
   - title: Kitchen

@@ -16,7 +16,7 @@ config:
 logger:
   default: warning
   logs:
-    urlllib3.connectionpool: critical
+    requests.packages.urllib3.connectionpool: critical
 
 recorder:
   purge_interval: 1
