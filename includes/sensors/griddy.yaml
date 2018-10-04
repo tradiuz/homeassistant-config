@@ -5,3 +5,4 @@
   payload: !secret griddy_json
   value_template: '{{ value_json["now"]["price_ckwh"] }}'
   unit_of_measurement: "¢/kwh"
+  scan_interval: 120
