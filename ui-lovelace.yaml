@@ -59,6 +59,7 @@ views:
             name: Pressure
 
       - type: glance
+        show_state: false
         title: A/C
         entities:
           - entity: switch.livingroom_ac_power
@@ -70,6 +71,16 @@ views:
             icon: mdi:snowflake
           - entity: switch.livingroom_ac_mode
             name: Fan-Only
+            tap_action: call-service
+            service: switch.turn_off
+            icon: mdi:fan
+          - entity: switch.livingroom_ac_temp
+            name: T+
+            tap_action: call-service
+            service: switch.turn_on
+            icon: mdi:fan
+          - entity: switch.livingroom_ac_temp
+            name: T-
             tap_action: call-service
             service: switch.turn_off
             icon: mdi:fan
