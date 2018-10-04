@@ -1,4 +1,7 @@
 title: Forristal Home
+resources:
+  - url: /local/circle-sensor-card.js?v=0
+    type: module
 views:
   - title: Cameras
     id: cameras
@@ -57,6 +60,17 @@ views:
             name: Humidity
           - entity: sensor.livingroom_pressure
             name: Pressure
+      - type: custom:circle-sensor-card
+        entity: sensor.livingroom_temperature
+        max: 100
+        min: 30
+        stroke_width: 10
+        gradient: false
+        units: '°F'
+        color_stops:
+          65: '#33bbff'
+          75: '#44ff33'
+          100: '#ff3333'
       - type: glance
         title: A/C
         entities:
