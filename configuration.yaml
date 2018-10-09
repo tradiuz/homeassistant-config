@@ -17,6 +17,10 @@ logger:
   default: warning
   logs:
     requests.packages.urllib3.connectionpool: critical
+    urllib3.connectionpool: error
+    homeassistant.components.camera: error
+    requests.packages.urllib3: critical
+
 
 recorder:
   purge_interval: 1
@@ -97,6 +101,29 @@ twilio:
 camera: !include includes/cameras.yaml
 
 input_select: !include includes/input_select.yaml
+
+input_number: 
+  mbr_setpoint:
+    name: "Master Bedroom Setpoint"
+    min: 65
+    max: 85
+    unit_of_measurement: "°F"
+  lr_setpoint:
+    name: "Living Room Setpoint"
+    min: 65
+    max: 85
+    unit_of_measurement: "°F"
+  mbr_actual:
+    name: "Master Bedroom AC Setting"
+    min: 65
+    max: 85
+    unit_of_measurement: "°F"
+  lr_actual:
+    name: "Living Room AC Setting"
+    min: 65
+    max: 85
+    unit_of_measurement: "°F"
+  
 
 octoprint:
   host: !secret octo_host

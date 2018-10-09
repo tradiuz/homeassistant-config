@@ -62,6 +62,7 @@ views:
         show_state: false
         title: A/C
         entities:
+          - entity: input_number.lr_setpoint
           - entity: switch.livingroom_ac_power
             name: A/C
           - entity: switch.livingroom_ac_mode
