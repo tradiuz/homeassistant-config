@@ -1,10 +1,15 @@
 - platform: mqtt
-  state_topic: "hass/5c:cf:7f:c3:ae:21/enviro/temperature"
+  state_topic: "hass/mbr_enviro/enviro/temperature"
   unit_of_measurement: "°F"
   name: "Master Bedroom Temperature"
 
 - platform: mqtt
-  state_topic: "hass/5c:cf:7f:c3:ae:21/enviro/humidity"
+  state_topic: "hass/mbr_enviro/enviro/humidity"
   unit_of_measurement: "%"
   name: "Master Bedroom Humidity"
+
+- platform: mqtt
+  state_topic: "hass/mbr_enviro/enviro/pressure"
+  unit_of_measurement: "mbar"
+  name: "Master Bedroom Pressure"
 

@@ -57,7 +57,9 @@ views:
             name: Humidity
           - entity: sensor.livingroom_pressure
             name: Pressure
-
+          - entity: sensor.griddy
+            name: Griddy
+            icon: mdi:cash
       - type: glance
         show_state: false
         title: A/C
@@ -75,7 +77,11 @@ views:
             tap_action: call-service
             service: switch.turn_off
             icon: mdi:fan
-
+      - type: history-graph
+        entities:
+          - input_number.lr_setpoint
+          - sensor.livingroom_temperature
+          - sensor.livingroom_humidity
 
   - title: Kitchen
     id: kitchen
