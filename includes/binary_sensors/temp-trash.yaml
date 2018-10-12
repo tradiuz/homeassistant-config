@@ -1,0 +1,20 @@
+- platform: template
+  sensors:
+    trash:
+      friendly_name: "Trash"
+      icon_template: >-
+        {% if (is_state('input_select.trash_pickup_day',(as_timestamp(now()) | timestamp_custom('%A')))) %}
+         mdi:delete
+        {% else %}
+         mdi:delete-outline
+        {% endif %}
+      value_template: "{{is_state('input_select.trash_pickup_day',(as_timestamp(now()) | timestamp_custom('%A')))}}"
+    recycling:
+      friendly_name: "Recycling"
+      icon_template: >-
+         {%if (is_state('input_select.recycle_pickup_day',(as_timestamp(now()) | timestamp_custom('%A'))) and ((as_timestamp(now()) | timestamp_custom('%W', true) | int ) % 2 == is_state('input_select.recycle_pickup_week','Odd Weeks')))%}
+           mdi:recycle
+         {% else %}
+           mdi:cup-off
+         {% endif %}
+      value_template: "{{(is_state('input_select.recycle_pickup_day',(as_timestamp(now()) | timestamp_custom('%A')))) and ((as_timestamp(now()) | timestamp_custom('%W', true) | int ) % 2 == is_state('input_select.recycle_pickup_week','Odd Weeks'))}}"
