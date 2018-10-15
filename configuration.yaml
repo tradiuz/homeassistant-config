@@ -76,6 +76,7 @@ logbook:
 group: !include includes/groups.yaml
 
 sensor: !include_dir_merge_list includes/sensors/
+binary_sensor: !include_dir_merge_list includes/binary_sensors/
 
 #Z-Wave devices:
 

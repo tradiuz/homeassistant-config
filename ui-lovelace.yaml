@@ -1,5 +1,29 @@
 title: Forristal Home
 views:
+  - title: Global
+    id: global
+    icon: mdi:earth
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: conditional
+            conditions:
+              - entity: binary_sensor.trash
+                state: true
+            card:
+              type: entities
+              show_header_toggle: false
+              entities:
+                - binary_sensor.trash
+          - type: conditional
+            conditions:
+              - entity: binary_sensor.recycke
+                state: true
+            card:
+              type: entities
+              show_header_toggle: false
+              entities:
+                - binary_sensor.recycle
   - title: Cameras
     id: cameras
     icon: mdi:cctv
