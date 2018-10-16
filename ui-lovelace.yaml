@@ -1,8 +1,8 @@
 title: Forristal Home
 views:
-  - title: Global
-    id: global
-    icon: mdi:earth
+  - title: Home
+    id: home
+    icon: mdi:home
     cards:
       - type: horizontal-stack
         cards:
@@ -17,13 +17,18 @@ views:
                 - binary_sensor.trash
           - type: conditional
             conditions:
-              - entity: binary_sensor.recycke
+              - entity: binary_sensor.recycling
                 state: true
             card:
               type: entities
               show_header_toggle: false
               entities:
-                - binary_sensor.recycle
+                - binary_sensor.recycling
+      - type: sensor
+        entity: sensor.griddy
+        icon: mdi:cash
+      - type: weather-forecast
+        entity: weather.darksky   
   - title: Cameras
     id: cameras
     icon: mdi:cctv
@@ -101,12 +106,6 @@ views:
             tap_action: call-service
             service: switch.turn_off
             icon: mdi:fan
-      - type: history-graph
-        entities:
-          - input_number.lr_setpoint
-          - sensor.livingroom_temperature
-          - sensor.livingroom_humidity
-
   - title: Kitchen
     id: kitchen
     icon: mdi:fridge
