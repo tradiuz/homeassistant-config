@@ -3,6 +3,6 @@
   resource: https://app.gogriddy.com/api/v1/insights/getnow
   method: POST
   payload: !secret griddy_json
-  value_template: '{{ value_json["now"]["price_ckwh"] }}'
+  value_template: '{{ value_json["now"]["price_ckwh"] | round(1) }}'
   unit_of_measurement: "¢/kwh"
   scan_interval: 120

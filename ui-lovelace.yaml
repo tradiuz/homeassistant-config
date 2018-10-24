@@ -24,11 +24,27 @@ views:
               show_header_toggle: false
               entities:
                 - binary_sensor.recycling
-      - type: sensor
-        entity: sensor.griddy
-        icon: mdi:cash
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.griddy
+            title: Griddy
+            unit_of_measurement: ¢
+            severity:
+              green: 0
+              yellow: 6
+              red: 20
+          - type: gauge
+            entity: sensor.current_uv_index
+            title: UV Index
+            max: 10
+            unit_of_measurement: 'UV'
+            severity:
+              green: 0
+              yellow: 3
+              red: 5
       - type: weather-forecast
-        entity: weather.darksky   
+        entity: weather.dark_sky   
   - title: Cameras
     id: cameras
     icon: mdi:cctv
