@@ -148,7 +148,17 @@ media_player:
     client_secret: !secret spotify_client_secret
     aliases:
       099b3ea38fbc011cc22716271c58e12a2a110395: 'Everywhere'
-      
+  - platform: vizio
+    host: 10.13.13.104
+    access_token: !secret vizio_pf
+    name: Patricks Desk
+    suppress_warning: true
+  - platform: vizio
+    host: 10.13.13.112
+    access_token: !secret vizio_tf
+    name: Tiffanys Desk
+    suppress_warning: true
+
 openuv:
   api_key: !secret openuv_api
 
@@ -158,4 +168,5 @@ habitica:
 
 switch:  !include_dir_merge_list includes/switches/
 
-
+device_tracker:
+  - platform: owntracks_http

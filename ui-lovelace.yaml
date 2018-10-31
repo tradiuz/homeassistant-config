@@ -32,7 +32,7 @@ views:
             unit_of_measurement: ¢
             severity:
               green: 0
-              yellow: 6
+              yellow: 5
               red: 20
           - type: gauge
             entity: sensor.current_uv_index
@@ -43,6 +43,24 @@ views:
               green: 0
               yellow: 3
               red: 5
+      - type: horizontal-stack
+        cards:
+          - type: conditional
+            conditions:
+              - entity: device_tracker.pforristal_ptfs9
+                state_not: home
+            card:
+              type: map
+              entities:
+                - device_tracker.pforristal_ptfs9
+          - type: conditional
+            conditions:
+              - entity: device_tracker.tforristal_trfs8
+                state_not: home
+            card:
+              type: map
+              entities:
+                - device_tracker.tforristal_trfs8
       - type: weather-forecast
         entity: weather.dark_sky   
   - title: Cameras
@@ -92,6 +110,10 @@ views:
         show_header_toggle: false
         entities:
           - switch.solder_station_plug_switch
+      - type: entities
+        title: TVs
+        entities:
+          - media_player.patricks_desk
       - type: glance
         title: Sensors
         entities:
