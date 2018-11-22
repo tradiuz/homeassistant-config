@@ -3,4 +3,8 @@
   api_key: !secret pb_api
 - name: twilio_call
   platform: twilio_call
-  from_number: +17133382739
+  from_number: !secret twilio_phone
+- name: html5
+  platform: html5
+  gcm_api_key:  !secret gcm_api_key
+  gcm_sender_id: !secret gcm_sender_id

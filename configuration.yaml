@@ -159,9 +159,6 @@ media_player:
     name: Tiffanys Desk
     suppress_warning: true
 
-openuv:
-  api_key: !secret openuv_api
-
 habitica:
   - api_user: !secret habitica_user
     api_key: !secret habitica_key
@@ -170,3 +167,15 @@ switch:  !include_dir_merge_list includes/switches/
 
 device_tracker:
   - platform: owntracks_http
+    region_mapping:
+      work__pf: work__pf
+      home: home
+      work__tf: work__tf
+  - platform: unifi
+    host: unifi
+    username: !secret unifi_user
+    password: !secret unifi_pass
+    verify_ssl: false
+    ssid_filter:
+      - 'Cosmic AC'
+zone: !include_dir_merge_list includes/zones/

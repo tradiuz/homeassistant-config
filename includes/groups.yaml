@@ -1,4 +1,11 @@
-
+houston_zones:
+  name: Houston Zones
+  entities:
+    - zone.home
+all_zones:
+  name: All Zones
+  entities:
+    - zone.home
 cameras:
   name: Cameras
   entities:

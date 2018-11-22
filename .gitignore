@@ -2,7 +2,8 @@
 #ignore zones
 zone*.yaml
 
-
+#ignore html5 push notifications
+html5_push_registrations.conf
 
 # Logs
 logs

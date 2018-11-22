@@ -43,7 +43,7 @@ views:
               green: 0
               yellow: 3
               red: 5
-      - type: horizontal-stack
+      - type: vertical-stack
         cards:
           - type: conditional
             conditions:
@@ -51,16 +51,20 @@ views:
                 state_not: home
             card:
               type: map
+              aspect_ratio: 50%
               entities:
                 - device_tracker.pforristal_ptfs9
+                - zone.home
           - type: conditional
             conditions:
               - entity: device_tracker.tforristal_trfs8
                 state_not: home
             card:
               type: map
+              aspect_ratio: 50%
               entities:
                 - device_tracker.tforristal_trfs8
+                - zone.home
       - type: weather-forecast
         entity: weather.dark_sky   
   - title: Cameras
@@ -99,6 +103,7 @@ views:
     icon: mdi:sofa
     cards:
       - type: entities
+        id: livingroom_lights
         title: Lights
         entities:
           - light.livingroom_light_level
