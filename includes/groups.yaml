@@ -2,6 +2,8 @@ houston_zones:
   name: Houston Zones
   entities:
     - zone.home
+    - zone.work__pf
+    - zone.work__tf
 all_zones:
   name: All Zones
   entities:
