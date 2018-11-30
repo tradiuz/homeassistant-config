@@ -228,3 +228,9 @@ views:
           - zone.home
           - zone.work__pf
           - zone.work__tf
+          - zone.central_market
+          - zone.heb_alabama
+          - zone.heb_bellaire
+          - zone.heb_buffalo
+          - zone.costco_greenway
+

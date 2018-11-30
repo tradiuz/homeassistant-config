@@ -166,11 +166,6 @@ habitica:
 switch:  !include_dir_merge_list includes/switches/
 
 device_tracker:
-  - platform: owntracks_http
-    region_mapping:
-      work__pf: work__pf
-      home: home
-      work__tf: work__tf
   - platform: unifi
     host: unifi
     username: !secret unifi_user
