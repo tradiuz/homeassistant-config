@@ -37,7 +37,12 @@ master_bedroom_lights:
   entities:
     - light.bedroom_light_level
     - switch.night_stand_light_switch
+
+animal_lights:
+  name: Animal Lights 
+  entities:
     - switch.snake_tank_light_switch
+
 master_bathroom_sensors:
   name: Master Bathroom Sensors
   entities:
@@ -78,6 +83,16 @@ outside_lights:
 actual_lights:
   name: Actual Lights
   entities: 
+    - group.hobby_room_lights
+    - group.kitchen_lights
+    - group.livingroom_lights
+    - group.outside_lights
+    - group.master_bedroom_lights
+    - group.animal_lights 
+
+human_lights:
+  name: Human Lights
+  entities:
     - group.hobby_room_lights
     - group.kitchen_lights
     - group.livingroom_lights

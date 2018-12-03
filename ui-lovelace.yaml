@@ -4,7 +4,8 @@ views:
     id: home
     icon: mdi:home
     cards:
-      - type: horizontal-stack
+      - id: 6d76de64fe8c45799945a2ca1cc3a033  # Automatically created id
+        type: horizontal-stack
         cards:
           - type: conditional
             conditions:
@@ -24,7 +25,8 @@ views:
               show_header_toggle: false
               entities:
                 - binary_sensor.recycling
-      - type: horizontal-stack
+      - id: 77f8e22da4824b7fa5107b1d391e5e46  # Automatically created id
+        type: horizontal-stack
         cards:
           - type: gauge
             entity: sensor.griddy
@@ -43,7 +45,8 @@ views:
               green: 0
               yellow: 3
               red: 5
-      - type: vertical-stack
+      - id: b37f6046e3924dc695397882e246b6d1  # Automatically created id
+        type: vertical-stack
         cards:
           - type: conditional
             conditions:
@@ -65,33 +68,38 @@ views:
               entities:
                 - device_tracker.tforristal_trfs8
                 - zone.home
-      - type: weather-forecast
-        entity: weather.dark_sky   
+      - id: ae94c378115f4bc7a38d4540ee09d160  # Automatically created id
+        type: weather-forecast
+        entity: weather.dark_sky
   - title: Cameras
     id: cameras
     icon: mdi:cctv
-    cards: 
-      - type: picture-glance
+    cards:
+      - id: 1c708b7b4b6a4e548862a380cd3dfe4f  # Automatically created id
+        type: picture-glance
         title: Front Door
         entities:
           - camera.front_porch
           - sensor.ftdr
         camera_image: camera.front_porch
-      - type: picture-glance
+      - id: c8682ea784ad470fb0cac3b9b34fa09c  # Automatically created id
+        type: picture-glance
         title: Front Yard
         entities:
           - camera.front_wide
           - sensor.mailbox
         camera_image: camera.front_wide
-      - type: picture-glance
+      - id: b47dcec387104b8288d9d95b5c7334a9  # Automatically created id
+        type: picture-glance
         title: Back Porch
         entities:
-          - camera.backporch
+          - camera.back_porch
           - sensor.bkdr
           - switch.back_porch_switch_3
           - switch.back_porch_switch_2
-        camera_image: camera.backporch
-      - type: picture-glance
+        camera_image: camera.back_porch
+      - id: 5a1c7c01dd274f6d82684092f085835f  # Automatically created id
+        type: picture-glance
         title: Side/Back Yard
         entities:
           - camera.side_back
@@ -110,16 +118,19 @@ views:
           - light.patricks_desk_light
           - light.tiffanys_desk_light
           - light.livingroom_rgbw_level
-      - type: entities
+      - id: b2b1a03dff54427aba32627bbfa8e576  # Automatically created id
+        type: entities
         title: Switches
         show_header_toggle: false
         entities:
           - switch.solder_station_plug_switch
-      - type: entities
+      - id: 2fe32a10d1b84969bfebda26d8f1a9cf  # Automatically created id
+        type: entities
         title: TVs
         entities:
           - media_player.patricks_desk
-      - type: glance
+      - id: 36753415a4874a0f9b200cab701192ad  # Automatically created id
+        type: glance
         title: Sensors
         entities:
           - entity: sensor.ftdr
@@ -132,7 +143,8 @@ views:
           - entity: sensor.griddy
             name: Griddy
             icon: mdi:cash
-      - type: glance
+      - id: b0f6d91bbcde4574a45cd69aa1d6704f  # Automatically created id
+        type: glance
         show_state: false
         title: A/C
         entities:
@@ -153,13 +165,15 @@ views:
     id: kitchen
     icon: mdi:fridge
     cards:
-      - type: entities
+      - id: ad7db8f5d1d44983ad00d91e4b587968  # Automatically created id
+        type: entities
         title: Lights
         entities:
           - light.kitchen_stove_light
           - light.kitchen_light
           - switch.kitchen_sink_light_switch
-      - type: glance
+      - id: 3f884788509e45f49b947b5e73d95a56  # Automatically created id
+        type: glance
         title: Sensors
         entities:
           - entity: sensor.bkdr
@@ -172,7 +186,8 @@ views:
     id: masterbr
     icon: mdi:hotel
     cards:
-      - type: entities
+      - id: bf6d3eedbfa54feeb1ba379f395c40fc  # Automatically created id
+        type: entities
         title: Lights
         entities:
           - light.bedroom_light_level
@@ -180,15 +195,17 @@ views:
           - switch.orange_light_switch
           - switch.bed_glow_switch
           - switch.snake_tank_light_switch
- 
-      - type: glance
+
+      - id: 49f9f111f4b5477ab2dca38f37a9b0c6  # Automatically created id
+        type: glance
         title: Sensors
         entities:
           - entity: sensor.master_bedroom_temperature
             name: Temp
           - entity: sensor.master_bedroom_humidity
             name: Humidity
-      - type: glance
+      - id: 2ef09726f8884e13894404262f1daddc  # Automatically created id
+        type: glance
         title: Snake Tank
         entities:
           - entity: sensor.snake_tank_temp__cold_side
@@ -201,27 +218,30 @@ views:
     id: hobby
     icon: mdi:flask
     cards:
-      - type: entities
+      - id: 609b0daa55c54fab9983e48276469549  # Automatically created id
+        type: entities
         title: Lights
         entities:
           - light.hobby_room_light
           - light.sewing_light
-      - type: picture-glance
+      - id: 20063cec9af54180a2ab533c08971b59  # Automatically created id
+        type: picture-glance
         title: Maker Select
         entities:
-          -  camera.octoprint
-          -  sensor.maker_select_current_state
-          -  sensor.maker_select_job_percentage
-          -  sensor.maker_select_actual_tool0_temp
-          -  sensor.maker_select_actual_bed_temp
-          -  switch.3d_printer_plug_switch
+          - camera.octoprint
+          - sensor.maker_select_current_state
+          - sensor.maker_select_job_percentage
+          - sensor.maker_select_actual_tool0_temp
+          - sensor.maker_select_actual_bed_temp
+          - switch.3d_printer_plug_switch
         camera_image: camera.octoprint
   - title: Map
     id: map
     icon: mdi:earth
     panel: true
     cards:
-      - type: map
+      - id: 000b8ac8f0184ae7b5efb4b2d9577690  # Automatically created id
+        type: map
         entities:
           - device_tracker.pforristal_ptfs9
           - device_tracker.tforristal_trfs8
