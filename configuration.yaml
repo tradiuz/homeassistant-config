@@ -165,12 +165,12 @@ habitica:
 
 switch:  !include_dir_merge_list includes/switches/
 
-#device_tracker:
-#  - platform: unifi
-#    host: unifi
-#    username: !secret unifi_user
-#    password: !secret unifi_pass
-#    verify_ssl: false
-#    ssid_filter:
-#      - 'Cosmic AC'
+device_tracker:
+  - platform: unifi
+    host: unifi
+    username: !secret unifi_user
+    password: !secret unifi_pass
+    verify_ssl: false
+    ssid_filter:
+      - 'Cosmic AC'
 zone: !include_dir_merge_list includes/zones/
