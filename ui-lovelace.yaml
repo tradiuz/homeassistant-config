@@ -105,6 +105,12 @@ views:
           - camera.side_back
         camera_image: camera.side_back
 
+      - id: site_camera_card
+        type: picture-glance
+        title: Site Work
+        entities:
+          - camera.site_camera
+        camera_image: camera.site_camera
 
   - title: Living Room
     id: living

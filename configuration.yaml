@@ -7,6 +7,7 @@ homeassistant:
   elevation: !secret home_elevation
   customize: !include customize.yaml
   customize_glob: !include includes/customize/customize_glob.yaml
+  packages: !include_dir_named includes/packages
 
 # Track the sun
 sun:
@@ -158,6 +159,10 @@ media_player:
     access_token: !secret vizio_tf
     name: Tiffanys Desk
     suppress_warning: true
+
+cast: 
+  media_player:
+    - host: 10.13.13.118 
 
 habitica:
   - api_user: !secret habitica_user
