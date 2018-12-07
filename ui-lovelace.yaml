@@ -102,15 +102,15 @@ views:
         type: picture-glance
         title: Side/Back Yard
         entities:
-          - camera.side_back
-        camera_image: camera.side_back
+          - camera.containers
+        camera_image: camera.containers
 
       - id: site_camera_card
         type: picture-glance
-        title: Site Work
+        title: Job Site
         entities:
-          - camera.site_camera
-        camera_image: camera.site_camera
+          - camera.jobsite
+        camera_image: camera.jobsite
 
   - title: Living Room
     id: living
