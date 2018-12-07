@@ -138,10 +138,6 @@ octoprint:
   bed: true
   number_of_tools: 1
 
-zoneminder:
-  host: !secret zm_host
-  username: !secret zm_user
-  password: !secret zm_pass
 
 media_player:
   - platform: spotify

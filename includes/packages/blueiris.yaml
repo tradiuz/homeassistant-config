@@ -1,0 +1,28 @@
+camera:
+  - platform: mjpeg
+    name: Front Porch
+    mjpeg_url: http://10.13.13.201/mjpg/frontp
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: mjpeg
+    name: Back Porch
+    mjpeg_url: http://10.13.13.201/mjpg/backp
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: mjpeg
+    name: Front Wide
+    mjpeg_url: http://10.13.13.201/mjpg/frontw
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: mjpeg
+    name: Containers
+    mjpeg_url: http://10.13.13.201/mjpg/containers
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: mjpeg
+    name: Jobsite
+    mjpeg_url: http://10.13.13.201/mjpg/job
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+
+
