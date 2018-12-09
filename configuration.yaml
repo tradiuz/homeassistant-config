@@ -12,6 +12,8 @@ homeassistant:
 # Track the sun
 sun:
 
+cloud:
+
 config:
 
 logger:

@@ -241,6 +241,15 @@ views:
           - sensor.maker_select_actual_bed_temp
           - switch.3d_printer_plug_switch
         camera_image: camera.octoprint
+  - title: Stairs
+    id: Stairs
+    icon: mdi:stairs
+    cards:
+      - id: 3f51ea1ed58347eab7459d0cf8c6395d
+        type: entities 
+        title: Lights
+        entities:
+          - light.stair_tread
   - title: Map
     id: map
     icon: mdi:earth

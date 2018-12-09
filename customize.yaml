@@ -186,3 +186,5 @@ switch.bed_glow_switch:
   icon: mdi:bed-empty
 switch.3d_printer_plug_switch:
   icon: mdi:printer-3d
+light.stair_tread:
+  friendly_name: Stair Tread Light
