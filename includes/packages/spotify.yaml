@@ -1,0 +1,7 @@
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
+    aliases:
+      099b3ea38fbc011cc22716271c58e12a2a110395: 'Everywhere'
+

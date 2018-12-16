@@ -1,5 +1,0 @@
-- platform: vizio
-  host: 10.13.13.104
-  access_token: !secret vizio_pf
-  suppress_warning: true
-
