@@ -61,10 +61,8 @@ mqtt: !include includes/mqtt.yaml
 #light: !include_dir_list includes/lights
 
 tts:
-  - platform: google
-    cache: true
-    cache_dir: /tmp/tts
-    time_memory: 300  
+  - platform: marytts
+    host: marytts
 
 # Enables the frontend
 frontend:
@@ -160,7 +158,7 @@ media_player:
 
 cast: 
   media_player:
-    - host: 10.13.13.118 
+    - host: 10.13.13.118
 
 habitica:
   - api_user: !secret habitica_user

@@ -32,11 +32,14 @@ weather:
     - sensor.dark_sky_humidity
     - sensor.dark_sky_precip_probability
     - binary_sensor.iss
+
 master_bedroom_lights:
   name: Master Bedroom Lights
   entities:
     - light.bedroom_light_level
     - switch.night_stand_light_switch
+    - switch.orange_light_switch
+    - switch.bed_glow_switch
 
 animal_lights:
   name: Animal Lights 
@@ -48,6 +51,7 @@ master_bathroom_sensors:
   entities:
     - sensor.master_bathroom_temperature
     - sensor.master_bathroom_humidity
+
 livingroom_lights:
   name: Livingroom Lights
   entities:
@@ -59,12 +63,8 @@ livingroom_lights:
 kitchen_lights:
   name: Kitchen Lights
   entities:
-    - sensor.bkdr
-    - sensor.kitchen_temperature
-    - sensor.kitchen_humidity
     - switch.kitchen_sink_light_switch
     - light.kitchen_light
-    - sensor.leak_detector_temperature
     - light.kitchen_stove_light
 
 hobby_room_lights:
