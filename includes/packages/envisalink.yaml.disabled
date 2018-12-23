@@ -1,0 +1,134 @@
+envisalink:
+  host: 10.13.13.125
+  panel_type: DSC
+  user_name: user
+  password: !secret envisalink_pass
+  code: !secret alarm_code
+  port: 4025
+  evl_version: 4
+  keepalive_interval: 60
+  zonedump_interval: 30
+  panic_type: Police
+  zones:
+    1:
+      name: 'First Floor Smoke'
+      type: 'smoke'
+    2:
+      name: 'First Floor CO'
+      type: 'gas'
+    3:
+      name: 'Second Floor Smoke'
+      type: 'smoke'
+    4:
+      name: 'Second Floor CO'
+      type: 'gas'
+    9:
+      name: 'Front Door'
+      type: 'door'
+    10:
+      name: 'Back Door'
+      type: 'door'
+    11:
+      name: 'Front Deck Door'
+      type: 'door'
+    12:
+      name: 'Back Deck Door'
+      type: 'door'
+    13:
+      name: 'Server Room Door'
+      type: 'door'
+    14:
+      name: 'Master Bedroom Door'
+      type: 'door'
+    15:
+      name: 'Water Heater Door'
+      type: 'door'
+    16:
+      name: 'Gun Safe Door'
+      type: 'door'
+    17:
+      name: 'Reading Nook Window'
+      type: 'window'
+    19:
+      name: 'Hobby Room Window'
+      type: 'window'
+    20:
+      name: 'Dining Room Window 1'
+      type: 'window'
+    21:
+      name: 'Dining Room Window 2'
+      type: 'window'
+    22:
+      name: 'West Bedroom Window'
+      type: 'window'
+    23:
+      name: 'East Bedroom Window'
+      type: 'window'
+    24:
+      name: 'Office Window'
+      type: 'window'
+    25:
+      name: 'Master Bedroom Window'
+      type: 'window'
+    26:
+      name: 'Master Bathtub Window'
+      type: 'window'
+    27:
+      name: 'Master Shower Window'
+      type: 'window'
+    28:
+      name: 'Stairway Window'
+      type: 'window'
+    33:
+      name: 'Livingroom Motion N'
+      type: 'motion'
+    34:
+      name: 'Livingroom Motion S'
+      type: 'motion'
+    35:
+      name: 'Front Entry Motion'
+      type: 'motion'
+    36:
+      name: 'Hobby Room Motion'
+      type: 'motion'
+    37:
+      name: 'Dining Room Motion'
+      type: 'motion'
+    38:
+      name: 'Rear Entry Motion'
+      type: 'motion'
+    39:
+      name: 'Launry Motion'
+      type: 'motion'
+    40:
+      name: 'Kitchen Motion'
+      type: 'motion'
+    41:
+      name: 'West Bedroom Motion'
+      type: 'motion'
+    42:
+      name: 'East Bedroom Motion'
+      type: 'motion'
+    43:
+      name: 'Reading Nook Motion'
+      type: 'motion'
+    44:
+      name: 'Stairway Motion'
+      type: 'motion'
+    45:
+      name: 'Office Motion'
+      type: 'motion'
+    46:
+      name: 'Master Bedroom Motion E'
+      type: 'motion'
+    47:
+      name: 'Master Bedroom Motion W'
+      type: 'motion'
+    48:
+      name: 'Master Bathroom Motion'
+      type: 'motion'
+
+  partitions:
+    1:
+      name: 'Haven Alarm'
+
