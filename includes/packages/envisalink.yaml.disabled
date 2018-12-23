@@ -98,7 +98,7 @@ envisalink:
       name: 'Rear Entry Motion'
       type: 'motion'
     39:
-      name: 'Launry Motion'
+      name: 'Laundry Motion'
       type: 'motion'
     40:
       name: 'Kitchen Motion'
