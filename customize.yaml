@@ -188,3 +188,5 @@ switch.3d_printer_plug_switch:
   icon: mdi:printer-3d
 light.stair_tread:
   friendly_name: Stair Tread Light
+switch.wax_warmer_plug_switch:
+  icon: mdi:candle

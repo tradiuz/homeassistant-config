@@ -1,0 +1,6 @@
+switch:
+  - platform: flux
+    lights:
+      - light.stair_tread
+    stop_colortemp: 1000
+    mode: rgb

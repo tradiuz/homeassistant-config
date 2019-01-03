@@ -3,10 +3,12 @@ device_tracker:
     host: 10.13.13.123
   - platform: googlehome
     host: 10.13.13.121 
+  - platform: googlehome
+    host: 10.13.13.129
 
 cast:
   media_player:
     - host: 10.13.13.123
     - host: 10.13.13.121
-
+    - host: 10.13.13.129
 

@@ -24,5 +24,7 @@ camera:
     mjpeg_url: http://10.13.13.201:81/mjpg/job
     username: !secret blueiris_user
     password: !secret blueiris_pass
-
+  - platform: proxy
+    entity_id: camera.jobsite
+    name: jpg
 
