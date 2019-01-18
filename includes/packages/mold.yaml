@@ -1,0 +1,13 @@
+sensor:
+  - platform: template
+    sensors:
+      ds_temperature:
+        friendly_name: "Outside Temperature"
+        unit_of_measurement: 'degrees'
+        value_template: >
+          {{ state_attr( 'weather.dark_sky', 'temperature') }}
+  - platform: mold_indicator
+    indoor_temp_sensor: sensor.living_room_motion_temperature
+    indoor_humidity_sensor: sensor.living_room_motion_relative_humidity
+    outdoor_temp_sensor: sensor.ds_temperature
+    calibration_factor: -3.0
