@@ -3,7 +3,7 @@ sensor:
     name: "PF to Work"
     region: 'US'
     origin: device_tracker.pforristal_ptfs9
-    destination: zone.work__pf
+    destination: zone.work_pf
   - platform: waze_travel_time
     name: "PF to Home"
     region: 'US'
@@ -13,7 +13,7 @@ sensor:
     name: "TF to Work"
     region: 'US'
     origin: device_tracker.tforristal_trfs8
-    destination: zone.work__tf
+    destination: zone.work_tf
   - platform: waze_travel_time
     name: "TF to Home"
     region: 'US'
