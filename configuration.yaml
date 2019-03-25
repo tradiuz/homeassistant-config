@@ -16,6 +16,8 @@ cloud:
 
 config:
 
+stream:
+
 logger:
   default: warning
   logs:
