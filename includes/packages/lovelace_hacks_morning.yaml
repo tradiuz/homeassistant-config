@@ -1,0 +1,18 @@
+sensor:
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+
+binary_sensor:
+  - platform: workday
+    country: US
+    province: TX
+  - platform: template
+    sensors:
+      is_it_morning:
+        friendly_name: Is it morning
+        entity_id: sensor.time
+        value_template: >
+           {% set ct = now().hour + now().minute/60 + now().second/3600 %}
+           {{ 6 <= ct <= 10 }}

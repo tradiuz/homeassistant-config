@@ -1,0 +1,31 @@
+camera:
+  - platform: generic
+    name: Front Porch
+    still_image_url: http://10.13.13.201:81/image/frontp
+    stream_source: !secret bi_front_porch
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: generic
+    name: Back Porch
+    still_image_url: http://10.13.13.201:81/image/backp
+    stream_source: !secret bi_back_porch
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: generic
+    name: Front Wide
+    still_image_url: http://10.13.13.201:81/image/frontw
+    stream_source: !secret bi_front_wide
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: generic
+    name: Containers
+    still_image_url: http://10.13.13.201:81/image/containers
+    stream_source: !secret bi_containers
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
+  - platform: generic
+    name: Jobsite
+    still_image_url: http://10.13.13.201:81/image/job
+    stream_source: !secret bi_jobsite
+    username: !secret blueiris_user
+    password: !secret blueiris_pass
