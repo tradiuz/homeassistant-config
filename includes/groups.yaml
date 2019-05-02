@@ -1,7 +1,3 @@
-all_zones:
-  name: All Zones
-  entities:
-    - zone.home
 cameras:
   name: Cameras
   entities:
@@ -10,91 +6,8 @@ cameras:
     - camera.front_wide
     - camera.side_back
 
-card_cameras:
-  name: Cameras
-  icon: mdi:cctv
-  view: yes
-  entities:
-    - group.cameras
-
-people:
-  name: People
-  entities:
-    - device_tracker.pforristal_ptfs9
-    - device_tracker.tforristal_trfs8
-
-weather:
-  name: Weather
-  entities:
-    - sun.sun
-    - sensor.dark_sky_summary
-    - sensor.dark_sky_temperature
-    - sensor.dark_sky_humidity
-    - sensor.dark_sky_precip_probability
-    - binary_sensor.iss
-
-master_bedroom_lights:
-  name: Master Bedroom Lights
-  entities:
-    - light.bedroom_light_level
-    - switch.night_stand_light_switch
-    - switch.orange_light_switch
-    - switch.bed_glow_switch
-
 animal_lights:
   name: Animal Lights 
   entities:
     - switch.snake_tank_light_switch
 
-master_bathroom_sensors:
-  name: Master Bathroom Sensors
-  entities:
-    - sensor.master_bathroom_temperature
-    - sensor.master_bathroom_humidity
-
-livingroom_lights:
-  name: Livingroom Lights
-  entities:
-    - light.livingroom_light_level
-    - light.livingroom_rgbw_level
-    - light.tiffanys_desk_light
-    - light.patricks_desk_light
-
-kitchen_lights:
-  name: Kitchen Lights
-  entities:
-    - switch.kitchen_sink_light_switch
-    - light.kitchen_light
-    - light.kitchen_stove_light
-
-hobby_room_lights:
-  name: Hobby Room Lights
-  entities:
-    - light.hobby_room_light
-    - light.sewing_light
-
-
-outside_lights:
-  name: Outside Lights
-  entities:
-    - switch.back_porch_switch_2
-    - switch.back_porch_switch_3
-
-actual_lights:
-  name: Actual Lights
-  entities: 
-    - group.hobby_room_lights
-    - group.kitchen_lights
-    - group.livingroom_lights
-    - group.outside_lights
-    - group.master_bedroom_lights
-    - group.animal_lights 
-
-human_lights:
-  name: Human Lights
-  entities:
-    - group.hobby_room_lights
-    - group.kitchen_lights
-    - group.livingroom_lights
-    - group.outside_lights
-    - group.master_bedroom_lights
