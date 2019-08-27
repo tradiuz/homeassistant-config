@@ -1,0 +1,23 @@
+person:
+  - name: Patrick
+    id: !secret pf_id
+    user_id: !secret pf_id
+    device_trackers:
+      - device_tracker.pforristal_ptfsx_2
+      - device_tracker.pforristal_ptfsx_wifi
+      - device_tracker.10_13_13_121_c0_bd_c8_22_f3_40
+      - device_tracker.10_13_13_123_c0_bd_c8_22_f3_40
+      - device_tracker.10_13_13_129_c0_bd_c8_22_f3_40
+  - name: Tiffany
+    id: !secret tf_id
+    user_id: !secret tf_id
+    device_trackers:
+      - device_tracker.tforristal_trfs9_2
+      - device_tracker.tforristal_trfs9_wifi
+
+group:
+  people:
+    name: People
+    entities:
+      - person.patrick
+      - person.tiffany
