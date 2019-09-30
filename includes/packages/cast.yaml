@@ -1,4 +1,3 @@
-
 cast:
   media_player:
     - host: 10.13.13.123

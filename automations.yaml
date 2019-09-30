@@ -1,0 +1,10 @@
+- id: '1557278357350'
+  alias: Frontend - Set Default
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - data:
+      name: dark_orange
+    service: frontend.set_theme

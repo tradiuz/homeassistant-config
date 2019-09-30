@@ -190,3 +190,7 @@ light.stair_tread:
   friendly_name: Stair Tread Light
 switch.wax_warmer_plug_switch:
   icon: mdi:candle
+person.patrick:
+  entity_picture: '"/local/img/avatar_patrick.png"'
+person.tiffany:
+  entity_picture: '"/local/img/avatar_tiffany.jpg"'
