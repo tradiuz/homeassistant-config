@@ -1,0 +1,7 @@
+input_boolean:
+  morning_override:
+    name: Morning Override
+    icon: mdi:weather-sunset-up
+  bedtime_override:
+    name: Bedtime Override
+    icon: mdi:sleep
