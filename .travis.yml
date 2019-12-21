@@ -1,5 +1,5 @@
 language: python
-env: HASS='homeassistant==0.77.3'
+env: HASS='homeassistant==0.102.3'
 python:
   - "3.7"
 matrix:
