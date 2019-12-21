@@ -21,6 +21,7 @@ before_install:
   - mv travis_secrets.yaml secrets.yaml
 install:
   - pip3 install $HASS
+  - pip3 install netdisco av homeassistant-pyozw
   - hass --version
 script:
   - hass --config . --script check_config
