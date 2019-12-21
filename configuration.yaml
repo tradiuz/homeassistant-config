@@ -41,7 +41,6 @@ recorder:
       - sensor.livingroom_rgbw_power_2
 
 http:
-  api_password: !secret http_api
   base_url: !secret base_url
   
 # Checks for available updates
@@ -148,12 +147,4 @@ habitica:
 
 switch:  !include_dir_merge_list includes/switches/
 
-device_tracker:
-  - platform: unifi
-    host: unifi
-    username: !secret unifi_user
-    password: !secret unifi_pass
-    verify_ssl: false
-    ssid_filter:
-      - 'Cosmic AC'
 zone: !include_dir_merge_list includes/zones/

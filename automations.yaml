@@ -6,5 +6,5 @@
   condition: []
   action:
   - data:
-      name: dark_orange
+      name: light
     service: frontend.set_theme
