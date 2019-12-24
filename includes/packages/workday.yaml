@@ -6,8 +6,14 @@ sensor:
 
 binary_sensor:
   - platform: workday
+    friendly_name: "Workday"
     country: US
     province: TX
+  - platform: workday
+    friendly_name: "Workday - Tomorrow"
+    country: US
+    province: TX
+    days_offset: 1
   - platform: template
     sensors:
       is_it_morning:
