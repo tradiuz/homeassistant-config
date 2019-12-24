@@ -37,7 +37,7 @@ addons:
      - libudev-dev
 before_install:
   - mv travis_secrets.yaml secrets.yaml
-  - pip3 install certifi
+  - pip3 install --force-reinstall certifi
 install:
   - pip3 install $HASS
   - hass --version
