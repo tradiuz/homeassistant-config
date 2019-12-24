@@ -6,11 +6,11 @@ sensor:
 
 binary_sensor:
   - platform: workday
-    friendly_name: "Workday"
+    name: "Workday"
     country: US
     province: TX
   - platform: workday
-    friendly_name: "Workday - Tomorrow"
+    name: "Workday - Tomorrow"
     country: US
     province: TX
     days_offset: 1
