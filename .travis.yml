@@ -18,10 +18,26 @@ matrix:
 cache:
   directories:
     - $HOME/.cache/pip
+addons:
+  apt:
+    packages:
+     - libdbd-pg-perl 
+     - libsnmp-perl 
+     - libssl-dev 
+     - libio-socket-ssl-perl
+     - curl 
+     - postgresql 
+     - build-essential
+     - libavformat-dev 
+     - libavcodec-dev 
+     - libavdevice-dev 
+     - libavutil-dev 
+     - libswscale-dev 
+     - libswresample-dev 
+     - libavfilter-dev 
+     - libudev-dev
 before_install:
   - mv travis_secrets.yaml secrets.yaml
-  - sudo apt-get install -y libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev  libudev-dev
-  - 
 install:
   - pip3 install $HASS
   - hass --version
