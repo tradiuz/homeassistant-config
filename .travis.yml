@@ -35,6 +35,7 @@ addons:
      - libswresample-dev 
      - libavfilter-dev 
      - libudev-dev
+     - python3-dev
 before_install:
   - mv travis_secrets.yaml secrets.yaml
   - pip3 install --force-reinstall certifi
