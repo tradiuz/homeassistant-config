@@ -83,3 +83,11 @@ phue.conf
 .*
 !/.gitignore
 !.travis.yml
+
+
+.storage
+.cloud
+.google.token
+
+ip_bans.yaml
+secrets.yaml
